@@ -4,4 +4,4 @@
 print("Hello World!")
 ```
 
-To learn more click this [Tutorials](Link)
+To learn more click this [link](tutorials)
