@@ -1,3 +1,3 @@
 # Python Tutorials
 
-[Intro to Python](Intr)
+[Intro to Python](intro)
