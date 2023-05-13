@@ -2,7 +2,7 @@
 
 #### Example 1
 
-*Output Hello World
+* Output Hello World
 
 ```python
 
@@ -10,7 +10,7 @@ print("Hello World!") #This outputs the text Hello World!
 ```
 
 #### Example 2
-*Get a list of files in the current directory and output them
+* Get a list of files in the current directory and output them
 
 '''python
 import os
