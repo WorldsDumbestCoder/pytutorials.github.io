@@ -1,4 +1,2 @@
 # pythontutorials
-```python
-print("Hello World!")
-```
+Learn Python.
