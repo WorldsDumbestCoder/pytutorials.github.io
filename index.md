@@ -20,6 +20,6 @@ for file in os.listdir():
      continue
   else:
     files.append(file)
-  print(files
+  print(files)
  ```
 For more examples click this [link](tutorials/index)
