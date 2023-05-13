@@ -1,4 +1,4 @@
-<h1> How do you output text in Python?</h1>
+<p> How do you output text in Python?</p>
 ```python
 
 print("Hello World!") #This outputs the text Hello World!
