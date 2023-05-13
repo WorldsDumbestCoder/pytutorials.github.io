@@ -1,2 +1,2 @@
+[Signup](signup.html)
 <hr/>
-(signup.html)Signup
