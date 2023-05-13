@@ -1,4 +1,4 @@
 <title>Python Tutorials</title>
-[Signup](signup.html)
-[Home](#home)
+--[][Signup](signup.html)
+-[][Home](#home)
 <hr/>
