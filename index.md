@@ -5,4 +5,4 @@
 print("Hello World!") #This outputs the text Hello World!
 ```
 
-To learn more click this [link](tutorials/index)
+For more examples click this [link](tutorials/index)
