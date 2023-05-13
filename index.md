@@ -17,9 +17,9 @@ import os
 files = []
 for file in os.listdir():
   if file == "yourfilename.py":
-     continue
+     continue)
   else:
     files.append(file)
-  print(file)
+  print(files
  ```
 For more examples click this [link](tutorials/index)
