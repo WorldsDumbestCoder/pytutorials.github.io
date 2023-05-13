@@ -1,6 +1,5 @@
 # How to loop through files and print out the files names in python?
-```
-python
+```python
 
 files = []
 for file in os.listdir():
@@ -9,3 +8,4 @@ for file in os.listdir():
   else:
     files.append(file)
   print(file)
+'''
