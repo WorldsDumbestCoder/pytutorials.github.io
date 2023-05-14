@@ -11,3 +11,5 @@ print(x)
 * In this code we create a variable "x" and define it as 5 then output the result.
 
 [Test the code here](https://onlinegdb.com)
+
+[Back](index) [Next Tutorial](tutorial2)
