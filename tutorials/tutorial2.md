@@ -6,5 +6,4 @@
 ```python
 print("Hello, World!")
 ```
-[Test the code](https://onlinegdb.com)
-<a href="tutorial1.html">Variables</a> | <a href="tutorial3">Next Tutorial</a>
+[Test the code](https://onlinegdb.com) | <a href="tutorial1.html">Variables</a> | <a href="tutorial3">Next Tutorial</a>
