@@ -35,3 +35,5 @@ for file in os.listdir():
 For more examples click this [link](tutorials/index)
 
 [Test your code here](https://onlinegdb.com)
+
+[Report a bug](mailto:eTmullall@outlook.com)
