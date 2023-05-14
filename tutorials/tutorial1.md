@@ -12,4 +12,4 @@ print(x)
 
 [Test the code here](https://onlinegdb.com)
 
-[Back](index) [Next Tutorial](tutorial2)
+[Back](index) | [Next Tutorial](tutorial2)
