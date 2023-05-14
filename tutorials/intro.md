@@ -1,11 +1,11 @@
 <h1>Intro to Python</h1>
 
-<div class="jumbo">
-  <h2>What is Python?</h2>
-</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
 
-<style>
-  .jumbo{
-    background-color:gray; 
-}
-</style>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>What is Python?</h2>
+      <p>Python is a programming language</p>
+    </div>
+  </div>
