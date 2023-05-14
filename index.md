@@ -1,4 +1,4 @@
-<a href="pytutorials.github.io">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a>
+<a href="https://pytutorials.github.io">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a>
 <hr/>
 <script src="404.js"></script>
 
