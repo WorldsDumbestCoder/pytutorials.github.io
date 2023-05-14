@@ -1,3 +1,5 @@
+<script src="404.js"></script>
+
 #### Home
 
 #### Example 1
