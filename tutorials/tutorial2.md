@@ -1,4 +1,4 @@
-## The print function
+### The print function
 
 ### What is the print function in Python?
 
