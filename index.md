@@ -22,4 +22,12 @@ for file in os.listdir():
     files.append(file)
   print(files)
  ```
+ 
+ #### Example 4
+* Comments
+
+```python
+#This is a comment it is usually used to explain what your code does. The computer ignores this.
+"""This is a multiline comment"""
+```
 For more examples click this [link](tutorials/index)
