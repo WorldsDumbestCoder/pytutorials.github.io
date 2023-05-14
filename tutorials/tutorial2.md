@@ -6,3 +6,4 @@
 ```python
 print("Hello, World!")
 ```
+<a href="tutorial1.html">Variables</a> | <a href="tutorial3">Next Tutorial</a>
