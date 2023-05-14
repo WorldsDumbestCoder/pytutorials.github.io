@@ -10,4 +10,4 @@ print(x)
 ```
 * In this code we create a variable "x" and define it as 5 then output the result.
 
-[Test the code](https://onlinegdb.com) | [Back](index) | [Next Tutorial](tutorial2)
+[Test the code](https://onlinegdb.com) | <a href="tutorial1.html">Previous Tutorial</a> | <a href="tutorial3">Next Tutorial</a>
