@@ -1,3 +1,5 @@
+<small>![image](https://github.com/pytutorials/pytutorials.github.io/assets/124309800/2f01bf5b-7f0d-4331-9155-77c357d52169)</small>
+
 <a href="https://pytutorials.github.io">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a>
 <hr/>
 <script src="404.js"></script>
