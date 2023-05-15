@@ -1,4 +1,4 @@
-<p>print("<h1>Hello World!</h1></p>
+<p>print("Hello World!")</p>
 
 <a href="https://pytutorials.github.io">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a>
 <hr/>
