@@ -10,6 +10,7 @@ print(xStr)
 ```
 This code converts the intenger x into a string by using the functions: int and str.
 
+* Convert an intenger into a float dtata type
 <em>This is usually how I write my code when i have to convert an intenger to a string.</em>
 
 <a href="https://onlinegdb.com">Test the code</a> | <a href="tutorial9.html">Back</a> <a href="tutorial11">Next Tutorial</a>
