@@ -1,4 +1,4 @@
-### How to convert an intenger into a float type.
+### How to convert data types
 
 * In this tutorial you're going to learn how to convert data types.
 
