@@ -7,7 +7,7 @@ So how do we create a list? Let me show you!
 ```python
 my_list = ["Grapes", "Oranges", "Bananas", "Bluebarries"]
 ```
-* Out can print out the list in two ways:
+ We can print out the list in two ways:
 ```python
 my_list = ["Grapes", "Oranges", "Bananas", "Bluebarries"]
 for items in my_list: #This will go through the list
