@@ -1,8 +1,8 @@
 ## How to create a list
 
-* In this tutorial we're going to learn what is/how to create a list
-* A list is used to store multiple variables in one.
-* So how do we create a list? Let me show you!
+In this tutorial we're going to learn what is/how to create a list.
+A list is used to store multiple variables in one.
+So how do we create a list? Let me show you!
 
 ```python
 my_list = ["Grapes", "Oranges", "Bananas", "Bluebarries"]
