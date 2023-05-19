@@ -7,9 +7,9 @@
 ```python
 my_list = ["Grapes", "Oranges", "Bananas", "Bluebarries"]
 ```
-* Out can also print out the list in two ways:
+* Out can print out the list in two ways:
 ```python
-my_list = ["Grapes", "Oranges", "Bananas": "Bluebarries"]
+my_list = ["Grapes", "Oranges", "Bananas", "Bluebarries"]
 for items in my_list: #This will go through the list
   print(items)
 #Or
