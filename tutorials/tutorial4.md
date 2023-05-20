@@ -9,8 +9,9 @@
 if : This is for decision making. (This is not a condition)
 
 < : Less then
-
-> : Greater then
+```python
+> # Greater then
+```
 For example,
 ```python
 x = 4
