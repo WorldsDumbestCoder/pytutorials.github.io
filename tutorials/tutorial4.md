@@ -6,7 +6,7 @@
 
 != : This means not equal to(you can also say is not)
 
-if : This is for decision making. 
+if : This is for decision making. (This is not a condition)
 
 < : Less then
 
