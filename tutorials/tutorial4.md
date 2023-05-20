@@ -7,7 +7,8 @@
 != : This means not equal to(you can also say is not)
 
 if : This is for decision making. (This is not a condition)
-
+True
+False
 < : Less then
 ```python
 > # Greater then
