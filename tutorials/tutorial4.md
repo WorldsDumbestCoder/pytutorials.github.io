@@ -19,10 +19,10 @@ False
 For example,
 ```python
 x = 4
-if x < 5:
- print(x)
+if x < 4:
+ print("X is less than 4!")
 if x > 4:
  print("X is more than 4!")
 if x == 4:
-   print("X is equal to 4!")
+ print("X is equal to 4!")
 ```
