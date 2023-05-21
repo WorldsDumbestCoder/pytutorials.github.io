@@ -11,7 +11,6 @@
 <script>
   function search(){
     var s = document.getElementById("search");
-    window.location.assign("https://pytutorials.github.io/" + s.value);
-    document.write(s.value);
+    document.write("<a href=' + s.value + '> " + s.value + "</a>");
   }
 </script>
