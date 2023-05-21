@@ -25,10 +25,10 @@ function wrong(){
 function challenges(){
   var other_challenges = document.getElementById("other_challenges");
   var nav = document.getElementById("challenges");
-  if(nav.style.display = "none"){
-    nav.style.display = "block";
-  }
-  if(nav.style.display = "block"){
-    nav.style.display = "none";
-  }
+  nav.style.display = "block";
+  other_challenges.style.display = "none";
+}
+function closeNav(){
+  document.getElementById("other_challenges").style.display = "block";
+  document.getElementById("challenges").style.display = "none";    
 }
