@@ -23,6 +23,13 @@ function wrong(){
   })
 }
 function challenges(){
-  document.getElementById("other_challenges").style.display ="none";
-  document.getElementById("challenges").style.display = "block";
+  var other_challenges = document.getElementById("other_challenges");
+  if(document.getElementById("challenges").style.display = "none"){
+    document.getElementById("challenges").style.display = "block";
+    other_challenges.innerText = "Close Nav";
+  }
+  if(document.getElementById("challenges").style.display = "block"){
+    document.getElementById("challenges").style.display ="none";
+    other_challenges.innerText = "Open Nav";
+  }
 }
