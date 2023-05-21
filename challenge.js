@@ -9,7 +9,9 @@ function right(){
       window.location.assign("https://pytutorials.github.io/challenges/" + nextChallenge);
     }else{
        nextChallenge = prompt("Enter the next challenge you want to try > ");
-       window.location.assign("https://pytutorials.github.io/challenges/" + nextChallenge);
+       if(nextChallenge != ""){
+         window.location.assign("https://pytutorials.github.io/challenges/" + nextChallenge);
+       }
     }
   })
 }
