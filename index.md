@@ -27,8 +27,8 @@ for file in os.listdir():
      continue
    else:
      files.append(file)
-   else:
-      continue
+  else:
+     continue
  ```
  
  <h4>Example 3</h4>
