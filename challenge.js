@@ -26,4 +26,3 @@ function challenges(){
   document.getElementById("other_challenges").style.display ="none";
   document.getElementById("challenges").style.display = "block";
 }
-document.write("hello");
