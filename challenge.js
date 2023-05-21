@@ -11,7 +11,7 @@ function right(){
 function wrong(){
   var h1 = document.getElementById("h1");
   h1.innerText = "Wrong! Click me to undisplay this.";
-  h1.addEventListenr("click", function(){
+  h1.addEventListener("click", function(){
     h1.style.display = "none";
-  });
+  })
 }
