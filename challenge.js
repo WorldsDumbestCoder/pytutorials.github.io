@@ -24,12 +24,11 @@ function wrong(){
 }
 function challenges(){
   var other_challenges = document.getElementById("other_challenges");
-  if(document.getElementById("challenges").style.display = "none"){
-    document.getElementById("challenges").style.display = "block";
-    other_challenges.innerText = "Close Nav";
+  var nav = document.getElementById("challenges");
+  if(nav.style.display = "none"){
+    nav.style.display = "block";
   }
-  if(document.getElementById("challenges").style.display = "block"){
-    document.getElementById("challenges").style.display ="none";
-    other_challenges.innerText = "Open Nav";
+  if(nav.style.display = "block"){
+    nav.style.display = "none";
   }
 }
