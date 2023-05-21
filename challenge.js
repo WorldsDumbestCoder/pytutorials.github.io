@@ -22,3 +22,7 @@ function wrong(){
     h1.innerText = "";
   })
 }
+function challenges(){
+  document.getElementById("other_challenges").style.display ="none";
+  document.getElementById("challenges").style.display = "block";
+}
