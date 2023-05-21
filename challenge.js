@@ -4,7 +4,7 @@ function right(){
   h1.addEventListener("click", function(){
     h1.style.display = "none";
     var nextChallenge = prompt("Enter the next challenge you want to try > ");
-    if(challenge != ""){
+    if(nextChallenge != ""){
       window.location.assign(nextChallenge);
     }
   })
