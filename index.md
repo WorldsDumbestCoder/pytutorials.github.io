@@ -22,11 +22,13 @@ print("Hello World!") #This outputs the text Hello World!
 import os
 files = []
 for file in os.listdir():
-  if file == "yourfilename.py":
+  if os.path.isfile(file):
+   if file == "yourfile.py":
      continue
-  else:
-    files.append(file)
-  print(files)
+   else:
+     files.appen(file)
+   else:
+      continue
  ```
  
  <h4>Example 3</h4>
