@@ -1,3 +1,4 @@
+var tries;
 function right(){
   var h1 = document.getElementById("h1");
   h1.innerText = "Correct! Click me to undisplay this.";
@@ -11,8 +12,9 @@ function right(){
 }
 
 function wrong(){
+  tries = tries+1;
   var h1 = document.getElementById("h1");
-  h1.innerText = "Wrong! Click me to undisplay this.";
+  h1.innerText = "Wrong! Click me to undisplay this. Tries = " + tries;
   h1.addEventListener("click", function(){
     window.location.reload();
   })
