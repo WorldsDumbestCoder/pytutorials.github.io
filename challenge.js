@@ -7,7 +7,7 @@ function right(){
     if(nextChallenge != ""){
       window.location.assign(nextChallenge);
     }else{
-       window.location.reload();
+       h1.innerText = "";
     }
   })
 }
@@ -16,6 +16,6 @@ function wrong(){
   var h1 = document.getElementById("h1");
   h1.innerText = "Wrong! Click me to try again. ";
   h1.addEventListener("click", function(){
-    window.location.reload();
+    h1.innerText = "";
   })
 }
