@@ -16,8 +16,7 @@ function right(){
 
 function wrong(){
   var h1 = document.getElementById("h1");
-  h1.innerText = "Click to undisplay. Sorry, but that's not correct. The correct answer is: ";
-  document.getElementById("wrong").style.display = "none";
+  h1.innerText = "Try Again. Click me to undisplay.";
   h1.style.color = "red";
   h1.addEventListener("click", function(){
     h1.innerText = "";
