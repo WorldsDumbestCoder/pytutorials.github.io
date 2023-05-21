@@ -26,7 +26,7 @@ for file in os.listdir():
    if file == "yourfile.py":
      continue
    else:
-     files.appen(file)
+     files.append(file)
    else:
       continue
  ```
