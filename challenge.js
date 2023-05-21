@@ -22,6 +22,3 @@ function wrong(){
     h1.innerText = "";
   })
 }
-document.getElementById("other_challenges").addEventListener("click", function(){
-  document.getElementById("challenges").style.display = "block";
-});
