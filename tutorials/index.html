@@ -1,5 +1,4 @@
-<a href="https://pytutorials.github.io">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a>
-<hr/>
+<a href="https://pytutorials.github.io">Home</a> <a>|</a> <a href="javascript:closePython()">Tutorials</a>
 <style>
   div{
      position:absolute;
@@ -10,7 +9,7 @@
     left:60%;
   }
 </style>
-<div>
+<div id="python">
   <h2>What Is Python?</h2>
   
   <p>Python is a popular programming language. It was created by Guido Van Russom, and released in 1991.</p>
@@ -28,7 +27,7 @@
   <li>Python can be used for losts of stuff. Not just one.</li>
 </div>
 
-<div class="tutorials">
+<div id="tutorials" class="tutorials">
   <a href="tutorial1">Tutorial 1</a>
   <a href="tutorial2">Tutorial 2</a>
   <a href="tutorial3">Tutorial 3</a>
@@ -40,3 +39,10 @@
   <a href="tutorial9">Tutorial 9</a>
   <a href="tutorial10">Tutorial 10</a>
 </div>
+<script>
+  function closePython(){
+    document.getElementById("python").style.display = "none";
+    document.getElementById("tutorials").position = "absolute";
+    document.getElementById("tutorials").left = "0%";
+  }
+</script>
