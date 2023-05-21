@@ -7,7 +7,7 @@ function right(){
     if(nextChallenge != ""){
       window.location.assign(nextChallenge);
     }else{
-       h1.innerText = "";
+       right();
     }
   })
 }
