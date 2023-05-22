@@ -5,6 +5,6 @@ function search(){
   }else{
     var h1 = document.createElement("h1");
     h1.innerText = "Enter a page!";
-    document.body,appendChild(h1);
+    document.body.appendChild(h1);
   }
 }
