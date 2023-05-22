@@ -4,7 +4,7 @@ function search(){
     if(s == ""){
       throw "Enter a tutorial!";
     }else{
-      window.location.assign("tutorials/" + s);
+      window.location.assign("https://pytutorials.github.io/" + s);
     }
   }catch(e){
       var h1 = document.createElement("h1");
