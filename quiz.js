@@ -1,3 +1,5 @@
+document.getElementById("submit").addEventListener("click", check_answer);
+
 function check_answer(){
   var ans = document.getElemenetById("answer");
   if(ans.value != 6){
@@ -10,3 +12,4 @@ function check_answer(){
     document.body.appendChild(h1);
   }  
 }
+
