@@ -1,6 +1,11 @@
 <p>print("Hello World!")</p>
 
 <a href="javascript:window.location.reload();">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a>
+<div class="search-form">
+  <form action="javascript:search()">
+    <input type="text" value="" id="search" placeholder="Search for a tutorial..."></input>
+  </form>
+ </div>
 <hr/>
 <script src="errorhandle.js"></script>
 <script src="search.js"></script>
@@ -14,10 +19,7 @@
 
 print("Hello World!") #This outputs the text Hello World!
 ```
-<div class="search-form">
-  <form action="javascript:search()">
-    <input type="text" value="" id="search" placeholder="Search for a tutorial..."></input>
-  </form>
+
 #### Example 2
 * Get a list of files in the current directory and output them
 
