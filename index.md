@@ -2,7 +2,7 @@
 
 <a href="javascript:window.location.reload();">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a>
 <hr/>
-<script src="404.js"></script>
+<script src="errorhandle.js"></script>
 
 #### Home
 
