@@ -1,4 +1,10 @@
 function search(){
-  var s = document.getElementById("s").value;
-  window.location.assign(s);
+  var s = document.getElementById("search").value;
+  if(s != ""){
+     window.location.assign("https://pytutorials/" + s);
+  }else{
+    var h1 = document.createElement("h1");
+    h1.innerText = "Enter a page!";
+    document.body,appendChild(h1);
+  }
 }
