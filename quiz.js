@@ -6,14 +6,20 @@ function check_answer(){
   let ans = document.querySelector("input[name=check]:checked");
   if (ans.value != 4) {
     var h1 = document.createElement("h1");
-    h1.innerText = "Try Again!";
+    h1.innerText = "Try Again! Click me to get rid of this";
     document.body.appendChild(h1);
-  }
+    h1.addEventListener("click", function(){
+      this.style.display = "none";
+    }
+  });
   if (ans.value == 4) {
     var h1 = document.createElement("h1");
-    h1.innerText = "Correct!";
+    h1.innerText = "Correct! Click me to get rid of this";
     document.body.appendChild(h1);
     increase_correct();
     alert(answers_correct);
-  }
+    h1.addEventListener("click", function(){
+      this.style.display ="none";
+    }
+  });
 }
