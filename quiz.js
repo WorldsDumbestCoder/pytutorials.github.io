@@ -10,6 +10,6 @@ function check_answer(){
     var h1 = document.createElement("h1");
     h1.innerText = "Correct!";
     document.body.appendChild(h1);
-    answers_correct=answers_correct+1;
+    answers_correct+1;
   }
 }
