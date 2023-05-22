@@ -5,7 +5,7 @@ function increase_correct(){
 function checkbox_checked(){
   let ans = document.querySelector("input[id=check]:checked");
   try{
-    if(ans == null){
+    if(ans == undefined){
       throw "Check a checkbox!";
     }else{
       check_answer();
