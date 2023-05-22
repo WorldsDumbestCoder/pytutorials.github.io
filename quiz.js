@@ -9,7 +9,7 @@ function check_answer(){
     h1.innerText = "Try Again! Click me to get rid of this";
     document.body.appendChild(h1);
     h1.addEventListener("click", function(){
-      this.style.display = "none";
+      this.innerText = "";
     }
   });
   if (ans.value == 4) {
@@ -19,7 +19,7 @@ function check_answer(){
     increase_correct();
     alert(answers_correct);
     h1.addEventListener("click", function(){
-      this.style.display ="none";
+      this.innerText = "";
     }
   });
 }
