@@ -12,12 +12,8 @@ function check_answer(){
   }
   if (ans.value == 4) {
     var h1 = document.createElement("h1");
-    h1.innerText = "Correct! Click me to get rid of this";
+    h1.innerText = "Correct!";
     h1.id = "header";
     document.body.appendChild(h1);
  }
 }
-var header = document.getElementById("header");
-header.addEventListener("click", function(){
-  header.innerText = "";
-});
