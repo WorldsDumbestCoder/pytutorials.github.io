@@ -1,6 +1,6 @@
 var answers_correct = 0;
 function increase_correct(){
-  retuen answers_correct+1;
+  return answers_correct+1;
 }
 function check_answer(){
   let ans = document.querySelector("input[name=check]:checked");
