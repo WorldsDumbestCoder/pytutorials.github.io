@@ -2,16 +2,12 @@ var answers_correct = 0;
 function increase_correct(){
   return answers_correct+1;
 }
+function checkbox_checked(){
+  let ans = document.querySelector("input[id=ans]:checked");
+  alert(ans)
+}
 function check_answer(){
     let ans = document.querySelector("input[name=check]:checked");
-    let checked = document.getElementById("checkbox").checked;
-    if(!checked){
-       try{
-          throw "Enter a value!";
-       }catch(err){
-         alert(err)
-       }
-    }
     if (ans.value != 4) {
       var h1 = document.createElement("h1");
       h1.innerText = "Try Again!";
