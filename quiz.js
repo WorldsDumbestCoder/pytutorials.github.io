@@ -3,7 +3,7 @@ function increase_correct(){
   return answers_correct+1;
 }
 function checkbox_checked(){
-  let ans = document.querySelector("input[id=ans]:checked");
+  let ans = document.querySelector("input[id=check]:checked");
   try{
     if(ans == null){
       throw "Check a checkbox!";
@@ -11,7 +11,9 @@ function checkbox_checked(){
       check_answer();
     }
   }catch(e){
-     document.write(e);
+     var h1 = document.createElement("h1");
+      h1.innerText = e;
+      document.body.appendChild(h1);
   }
 }
 function check_answer(){
