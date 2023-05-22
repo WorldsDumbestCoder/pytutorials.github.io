@@ -1,3 +1,4 @@
+var answers_correct;
 function check_answer(){
   let ans = document.querySelector("input[name=check]:checked");
   if (ans.value != 4) {
@@ -9,5 +10,6 @@ function check_answer(){
     var h1 = document.createElement("h1");
     h1.innerText = "Correct!";
     document.body.appendChild(h1);
+    answers_correct+=1
   }
 }
