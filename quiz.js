@@ -15,3 +15,7 @@ function check_answer(){
     document.body.appendChild(h1);
  }
 }
+var header = document.getElementById("header");
+header.addEventListener("click", function(){
+  header.innerText = "";
+});
