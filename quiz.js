@@ -11,6 +11,6 @@ function check_answer(){
     h1.innerText = "Correct!";
     document.body.appendChild(h1);
     answers_correct+1;
-    alert(answers);
+    alert(answers_correct);
   }
 }
