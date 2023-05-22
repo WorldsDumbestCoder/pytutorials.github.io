@@ -8,18 +8,12 @@ function check_answer(){
     var h1 = document.createElement("h1");
     h1.innerText = "Try Again! Click me to get rid of this";
     document.body.appendChild(h1);
-    h1.addEventListener("click", function(){
-      this.innerText = "";
-    }
-  });
+    h1.onclick = this.innerText = "";
   if (ans.value == 4) {
     var h1 = document.createElement("h1");
     h1.innerText = "Correct! Click me to get rid of this";
     document.body.appendChild(h1);
     increase_correct();
-    alert(answers_correct);
-    h1.addEventListener("click", function(){
-      this.innerText = "";
-    }
-  });
+    h1.onclick = this.innerText = "";
+  }
 }
