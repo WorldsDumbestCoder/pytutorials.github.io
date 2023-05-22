@@ -1,4 +1,4 @@
-var answers_correct;
+var answers_correct = 0;
 function check_answer(){
   let ans = document.querySelector("input[name=check]:checked");
   if (ans.value != 4) {
