@@ -9,6 +9,6 @@ function search(){
   }catch(e){
       var h1 = document.createElement("h1");
       h1.innerText = e;
-      document.body.appendChild(e);
+      document.body.appendChild(h1);
   }
 }
