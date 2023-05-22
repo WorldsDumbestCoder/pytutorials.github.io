@@ -14,6 +14,7 @@ function checkbox_checked(){
      var h1 = document.createElement("h1");
       h1.innerText = e;
       document.body.appendChild(h1);
+      alert(e)
   }
 }
 function check_answer(){
