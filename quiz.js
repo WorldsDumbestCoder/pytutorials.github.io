@@ -8,9 +8,7 @@ function check_answer(){
        try{
           throw "Enter a value!";
        }catch(err){
-         var h1 = document.createElement("h1");
-         h1.innerText = err;
-         document.body.appendChild(h1);
+         alert(err)
        }
     }
     if (ans.value != 4) {
