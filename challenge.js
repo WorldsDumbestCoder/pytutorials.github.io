@@ -21,12 +21,14 @@ function wrong(){
     h1.innerText = "";
   })
 }
+
 function challenges(){
   var other_challenges = document.getElementById("other_challenges");
   var nav = document.getElementById("challenges");
   nav.style.display = "block";
   other_challenges.style.display = "none";
 }
+
 function closeNav(){
   document.getElementById("other_challenges").style.display = "block";
   document.getElementById("challenges").style.display = "none";    
