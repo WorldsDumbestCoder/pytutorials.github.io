@@ -4,7 +4,7 @@ function increase_correct(){
 }
 function check_answer(){
     let ans = document.querySelector("input[name=check]:checked");
-    if(ans.value == ""){
+    if(!ans.checked){
        try{
           throw "Enter a value!";
        }catch(err){
