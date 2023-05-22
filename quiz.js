@@ -7,11 +7,13 @@ function check_answer(){
   if (ans.value != 4) {
     var h1 = document.createElement("h1");
     h1.innerText = "Try Again!";
+    h1.id = "header";
     document.body.appendChild(h1);
   }
   if (ans.value == 4) {
     var h1 = document.createElement("h1");
     h1.innerText = "Correct! Click me to get rid of this";
+    h1.id = "header";
     document.body.appendChild(h1);
  }
 }
