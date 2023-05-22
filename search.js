@@ -2,7 +2,7 @@ function search(){
   var s = document.getElementById("search").value;
   try{
     if(s == ""){
-      throw "Enter a tutorial!";
+      throw "Enter a page!";
     }else{
       window.location.assign("https://pytutorials.github.io/" + s);
     }
