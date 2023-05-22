@@ -4,7 +4,15 @@ function increase_correct(){
 }
 function checkbox_checked(){
   let ans = document.querySelector("input[id=ans]:checked");
-  alert(ans)
+  try{
+    if(ans == null){
+      throw "Check a checkbox!";
+    }else{
+      check_answer();
+    }
+  }catch(e){
+     document.write(e);
+  }
 }
 function check_answer(){
     let ans = document.querySelector("input[name=check]:checked");
