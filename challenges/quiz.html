@@ -1,30 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Python Quiz</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://pytutorials.github.io/quiz.js"></script>
-</head>
-<body>
-	<div class="container">
-		<h1>Python Quiz</h1>
-		<p>Test your knowledge of Python with this quiz!</p>
-		<form id="quiz-form">
-			<div class="question">
-				<h2>Question 1:</h2>
-				<p>What is the output of the following code?</p>
-				<pre><code>print(2 + 2 * 3)</code></pre>
-				<label><input type="radio" name="q1" value="a"> 8</label><br>
-				<label><input type="radio" name="q1" value="b"> 12</label><br>
-				<label><input type="radio" name="q1" value="c"> 14</label><br>
-			</div>
-			<div class="question">
-				<h2>Question 2:</h2>
-				<p>What is the output of the following code?</p>
-				<pre><code>for i in range(3):
-    print(i)</code></pre>
-				<label><input type="radio" name="q2" value="a"> 0 1 2</label><br>
-				<label><input type="radio" name="q2" value="b"> 1 2 3</label><br>
-				<label><input type="radio" name="q2" value="c"> 1 1 1</label><br>
-      </div>
+<script src="https://pytutorials.github.io/quiz.js"></script>
+<h1>Python Quiz</h1>
+<p>Test your knowledge of Python with this quiz!</p>
+<div class="container">
+	<div class="question-form">
+		<h1>Question 1:</h1>
+		<p>What is the output of this code?</p>
+		<p>print(2+2+2)</p>
+		<form id="answer" value="" action="check_answer()">
+			<input type="checkbox" value="1">8</input>
+		        <input type="checkbox" value="2">4</input>
+	                <input type="checkbox" value="3">2</input>
+                        <input type="checkbox" value="4">6</input>
+		</form>
+         </div>
+</div>
