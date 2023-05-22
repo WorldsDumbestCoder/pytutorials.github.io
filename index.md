@@ -3,7 +3,7 @@
 <a href="javascript:window.location.reload();">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a>
 <div class="search-form">
   <form action="javascript:search()">
-    <input type="text" value="" id="search" placeholder="Search for a tutorial..."></input>
+    <input type="text" value="" id="search" placeholder="Search for a page..."></input>
   </form>
  </div>
 <hr/>
