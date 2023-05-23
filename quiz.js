@@ -25,11 +25,10 @@ function check_answer(){
       p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
       document.body.appendChild(p);
       answers_wrong = answers_wrong+1;
-      var calc = answers_correct/4;
-      var calcTimesHund = calc*100;
-      if(calcTimesHund < 50){
+      var calc = answers_correct/4*100;
+      if(calc < 50){
          alert("You failed this quiz!");
-         document.write("you got " + calcTimesHund + "%");
+         document.write("you got " + calc + "%");
       }else{
          alert("Good Job! YOU PASSED THIS QUIZ!");
          document.write("you got " + calcTimesHund + "%");
