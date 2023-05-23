@@ -25,7 +25,7 @@ function check_answer(){
       h1.innerText = "Try Again!";
       h1.id = "header";
       document.body.appendChild(h1);
-      answers_wrong += answers_wrong+1;
+      answers_wrong = answers_wrong+1;
     }
     if (ans.value == 4) {
       var h1 = document.createElement("h1");
