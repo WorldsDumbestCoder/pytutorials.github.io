@@ -31,5 +31,8 @@ function check_answer(){
       h1.innerText = "Correct!";
       document.body.appendChild(h1);
       answers_correct = answers_correct+1;
+      var p = document.createElement("p");
+      p.innerText = "Answers Correct/Wrong: " + answers_wrong + " / " + answers_correct;
+      document.body.appendChild(p);
    }
 }
