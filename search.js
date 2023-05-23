@@ -1,6 +1,6 @@
 function search(){
-  var s = document.getElementById("search").value;
-  if(s != ""){
+  var searchValue = document.getElementById("search").value;
+  if(searchValue != ""){
      window.location.assign("https://pytutorials.github.io/" + s);
   }else{
     var h1 = document.createElement("h1");
