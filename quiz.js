@@ -1,5 +1,9 @@
 var answers_correct = 0;
 var answers_wrong = 0;
+if(answers_wrong == 3){
+   alert("Try again next time!");
+   window.location.assign("https://pytutorials.github.io/");
+}
 function checkbox_checked(){
   let ans = document.querySelector("input[id=check]:checked");
   try{
@@ -29,8 +33,5 @@ function check_answer(){
        h1.id = "header";
        document.body.appendChild(h1);
        answers_correct = answers_correct+1;
-       var p = document.createElement("p");
-       p.innerText = "Wrong/Correct:" + answers_wrong + " / " + answers_correct;
-       document.body.appendChild(p);
     }
 }
