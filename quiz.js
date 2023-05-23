@@ -27,6 +27,6 @@ function check_answer(){
        h1.id = "header";
        document.body.appendChild(h1);
        answers_correct = answers_correct+1;
-       alert(answers_correct);
+       document.getElementById("ans_cor").innerText = "Answers Correct: " +  answers_correct;
     }
 }
