@@ -5,7 +5,7 @@ if(answers_wrong == 3){
    window.location.assign("https://pytutorials.github.io/");
 }
 function checkbox_checked(){
-  let ans = document.querySelector("input[id=check]:checked");
+  let ans = document.querySelector("input[name=check]:checked");
   try{
     if(!ans){
       throw "Check a checkbox!";
