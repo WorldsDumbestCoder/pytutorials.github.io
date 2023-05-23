@@ -31,7 +31,7 @@ function check_answer(){
          document.write("you got " + calc + "%");
       }else{
          alert("Good Job! YOU PASSED THIS QUIZ!");
-         document.write("you got " + calcTimesHund + "%");
+         document.write("you got " + calc + "%");
       }
    }
    if (ans.value == 4) {
@@ -47,10 +47,10 @@ function check_answer(){
       var calcTimesHund = calc*100;
       if(calcTimesHund < 50){
          alert("You failed this quiz!");
-         document.write("you got " + calcTimesHund + "%");
+         document.write("you got " + calc + "%");
       }else{
          alert("Good Job! YOU PASSED THIS QUIZ!");
-         document.write("you got " + calcTimesHund + "%");
+         document.write("you got " + calc + "%");
       }
    }
 }
