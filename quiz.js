@@ -25,6 +25,9 @@ function check_answer(){
       h1.innerText = "Try Again!";
       document.body.appendChild(h1);
       answers_wrong = answers_wrong+1;
+      var p = document.createElement("p");
+      p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
+      document.body.appendChild(p);
    }
    if (ans.value == 4) {
       var h1 = document.createElement("h1")
@@ -34,6 +37,5 @@ function check_answer(){
       var p = document.createElement("p");
       p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
       document.body.appendChild(p);
-  
    }
 }
