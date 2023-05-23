@@ -26,7 +26,7 @@ function check_answer(){
        h1.innerText = "Correct!";
        h1.id = "header";
        document.body.appendChild(h1);
-       answers_correct+1;
+       answers_correct = answers_correct+1;
        alert(answers_correct);
     }
 }
