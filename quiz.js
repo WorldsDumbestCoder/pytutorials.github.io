@@ -1,4 +1,5 @@
 var answers_correct = 0;
+var answers_wrong = 0;
 function checkbox_checked(){
   let ans = document.querySelector("input[id=check]:checked");
   try{
@@ -20,6 +21,7 @@ function check_answer(){
       h1.innerText = "Try Again!";
       h1.id = "header";
       document.body.appendChild(h1);
+      answers_wrong += answers_wrong+1;
     }
     if (ans.value == 4) {
       var h1 = document.createElement("h1");
@@ -28,7 +30,7 @@ function check_answer(){
        document.body.appendChild(h1);
        answers_correct = answers_correct+1;
        var p = document.createElement("p");
-       p.innerText = answers_correct;
+       p.innerText = "Wrong/Correct:" + answers_wrong + " / " + answers_correct;
        document.body.appendChild(p);
     }
 }
