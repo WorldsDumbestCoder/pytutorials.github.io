@@ -29,5 +29,6 @@ function check_answer(){
        h1.innerText = "Correct!";
        h1.id = "header";
        document.body.appendChild(h1);
+      increase_score();
     }
 }
