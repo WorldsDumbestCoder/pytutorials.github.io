@@ -1,8 +1,5 @@
 var answers_correct = 0;
 var answers_wrong = 0;
-var p = document.createElement("p");
-p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
-document.body.appendChild(p);
 if(answers_wrong == 3){
    alert("Try again next time!");
    window.location.assign("https://pytutorials.github.io/");
