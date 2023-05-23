@@ -1,8 +1,3 @@
-var answers_correct = 0;
-var answers_wrong = 0;
-var extended_script = document.createElement("script");
-extended_script.src ="quizAnswers.js";
-document.body.appendChild(extended_script);
 if(answers_wrong == 3){
    alert("Try again next time!");
    window.location.assign("https://pytutorials.github.io/");
@@ -24,10 +19,19 @@ function checkbox_checked(){
 function check_answer(){
    let ans = document.querySelector('input[name=check]:checked');
    if (ans.value != 4) {
-      var h1 = document.createElement("h1");
-      h1.innerText = "Try Again!";
-      document.body.appendChild(h1);
+      var p = document.createElement("p");
+      p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
+      document.body.appendChild(p);
       answers_wrong = answers_wrong+1;
+      var calc = answers_correct/4;
+      var calcTimesHund = calc*100;
+      if(calcTimesHund < 50){
+         alert("You failed this quiz!");
+         document.write("you got " + calcTimesHund + "%");
+      }else{
+         alert("Good Job! YOU PASSED THIS QUIZ!");
+         document.write("you got " + calcTimesHund + "%");
+      }
    }
    if (ans.value == 4) {
       var h1 = document.createElement("h1")
