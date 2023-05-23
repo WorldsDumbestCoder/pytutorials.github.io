@@ -1,5 +1,8 @@
 var answers_correct = 0;
 var answers_wrong = 0;
+var extended_script = document.createElement("script");
+extended_script.src ="quizAnswers.js";
+document.body.appendChild(extended_script);
 if(answers_wrong == 3){
    alert("Try again next time!");
    window.location.assign("https://pytutorials.github.io/");
