@@ -8,7 +8,7 @@ function checkbox_checked(){
   let ans = document.querySelector("input[name=radio]:checked");
   try{
     if(!ans){
-      throw "Check all the checkboxes!";
+      throw "Check all the boxes!";
     }else{
       check_answer();
     }
@@ -19,14 +19,13 @@ function checkbox_checked(){
   }
 }
 function check_answer(){
-   function check_answer() {
-    let ans = document.querySelector('input[name=radio]:checked');
+   let ans = document.querySelector('input[name=radio]:checked');
    if (ans.value != 4) {
-    h1.innerText = "Try Again!";
-    answers_wrong = answers_wrong+1;
-  }
-  if (ans.value == 4) {
-    h1.innerText = "Correct!";
-    answers_correct = answers_correct+1
-  }
+      h1.innerText = "Try Again!";
+      answers_wrong = answers_wrong+1;
+   }
+   if (ans.value == 4) {
+      h1.innerText = "Correct!";
+      answers_correct = answers_correct+1;
+   }
 }
