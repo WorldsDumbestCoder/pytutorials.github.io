@@ -1,8 +1,4 @@
 var answers_correct = 0;
-function increase_correct(){
-  return answers_correct+1;
-  alert(answers_correct);
-}
 function checkbox_checked(){
   let ans = document.querySelector("input[id=check]:checked");
   try{
@@ -30,6 +26,7 @@ function check_answer(){
        h1.innerText = "Correct!";
        h1.id = "header";
        document.body.appendChild(h1);
-       increase_correct();
+       answers_correct+1;
+       alert(answers_correct);
     }
 }
