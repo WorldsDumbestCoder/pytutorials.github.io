@@ -30,5 +30,9 @@ function check_answer(){
        var p = document.createElement("p");
        p.innerText = answers_correct;
        document.body.appendChild(p);
+       var perc = document.createElement("p");
+       var calc = answers_correct/3*100;
+       perc.innerText = "You got " + calc+ "%";
+       document.body.appendChild(perc);
     }
 }
