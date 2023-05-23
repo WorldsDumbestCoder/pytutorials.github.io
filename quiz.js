@@ -1,5 +1,8 @@
 var answers_correct = 0;
 var answers_wrong = 0;
+var p = document.createElement("p");
+p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
+document.body.appendChild(p);
 if(answers_wrong == 3){
    alert("Try again next time!");
    window.location.assign("https://pytutorials.github.io/");
@@ -25,17 +28,11 @@ function check_answer(){
       h1.innerText = "Try Again!";
       document.body.appendChild(h1);
       answers_wrong = answers_wrong+1;
-      var p = document.createElement("p");
-      p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
-      document.body.appendChild(p);
    }
    if (ans.value == 4) {
       var h1 = document.createElement("h1")
       h1.innerText = "Correct!";
       document.body.appendChild(h1);
       answers_correct = answers_correct+1;
-      var p = document.createElement("p");
-      p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
-      document.body.appendChild(p);
    }
 }
