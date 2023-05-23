@@ -1,6 +1,7 @@
 var answers_correct = 0;
 function increase_correct(){
   return answers_correct+1;
+  alert(answers_correct);
 }
 function checkbox_checked(){
   let ans = document.querySelector("input[id=check]:checked");
