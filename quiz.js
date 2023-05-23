@@ -5,7 +5,7 @@ if(answers_wrong == 3){
    window.location.assign("https://pytutorials.github.io/");
 }
 function checkbox_checked(){
-  let ans = document.querySelector("input[name=radio]:checked");
+  let ans = document.querySelector("input[name=check]:checked");
   try{
     if(!ans){
       throw "Check all the boxes!";
@@ -19,7 +19,7 @@ function checkbox_checked(){
   }
 }
 function check_answer(){
-   let ans = document.querySelector('input[name=radio]:checked');
+   let ans = document.querySelector('input[name=check]:checked');
    if (ans.value != 4) {
       h1.innerText = "Try Again!";
       answers_wrong = answers_wrong+1;
