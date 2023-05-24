@@ -11,5 +11,5 @@ function removeUsername(){
 function signup(){
   var username = prompt("Create a username > ");
   localStorage.setItem("username", username);
-  window.location.assign("index.html");
+  alert("Refresh the page to see the changes! ");
 }
