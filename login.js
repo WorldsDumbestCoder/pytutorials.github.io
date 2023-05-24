@@ -3,3 +3,4 @@ if(!localStorage.getItem("username")){
   localStorage.setItem("username", username);
 }else{
   document.write("<a href='javascript:localStorage.removeItem('username');'>Logout</a>");
+}
