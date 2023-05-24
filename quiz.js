@@ -36,3 +36,4 @@ function check_answer(){
          answers_wrong = answers_wrong+1;
       }
    }
+}
