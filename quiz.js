@@ -1,6 +1,6 @@
 var answers_wrong;
 var answers_correct;
-if(answers_wrong == 3){
+if(!answers_wrong == 3){
    alert("Try again next time!");
    window.location.assign("https://pytutorials.github.io/");
 }
@@ -25,14 +25,6 @@ function check_answer(){
       p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
       document.body.appendChild(p);
       answers_wrong = answers_wrong+1;
-      var calc = answers_correct/4*100;
-      if(!calc == 50){
-         alert("You failed this test!");
-         document.write("You got " + calc + "%" +  " <a href='https://pytutorials.github.io/challenges/quiz'>Try again</a>");
-      }else{
-        alert("Good job you passed this test!");
-         document.write("You got " + calc + "%");
-      }
       if (ans.value == 4) {
          var h1 = document.createElement("h1")
          h1.innerText = "Correct!";
@@ -42,14 +34,5 @@ function check_answer(){
          p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
          document.body.appendChild(p);
          answers_wrong = answers_wrong+1;
-         var calc = answers_correct/4;
-         var calcTimesHund = calc*100;
-         if(calcTimesHund < 50){
-            alert("You failed this quiz!");
-            document.write("you got " + calc + "%");
-         }else{
-            alert("Good Job! YOU PASSED THIS QUIZ!");
-            document.write("you got " + calc + "%");
-         }
       }
    }
