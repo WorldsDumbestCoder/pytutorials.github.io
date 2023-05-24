@@ -26,31 +26,30 @@ function check_answer(){
       document.body.appendChild(p);
       answers_wrong = answers_wrong+1;
       var calc = answers_correct/4*100;
-      if(calc < 50){
-         alert("You failed this quiz!");
-         document.write("you got " + calc + "%");
+      if(!calc == 50){
+         alert("You failed this test!");
+         document.write("You got " + calc + "%" +  " <a href='https://pytutorials.github.io/challenges/quiz'>Try again</a>");
       }else{
-         alert("Good Job! YOU PASSED THIS QUIZ!");
-         document.write("you got " + calc + "%");
+        alert("Good job you passed this test!");
+         document.write("You got " + calc + "%");
+      }
+      if (ans.value == 4) {
+         var h1 = document.createElement("h1")
+         h1.innerText = "Correct!";
+         document.body.appendChild(h1);
+         answers_correct = answers_correct+1;
+         var p = document.createElement("p");
+         p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
+         document.body.appendChild(p);
+         answers_wrong = answers_wrong+1;
+         var calc = answers_correct/4;
+         var calcTimesHund = calc*100;
+         if(calcTimesHund < 50){
+            alert("You failed this quiz!");
+            document.write("you got " + calc + "%");
+         }else{
+            alert("Good Job! YOU PASSED THIS QUIZ!");
+            document.write("you got " + calc + "%");
+         }
       }
    }
-   if (ans.value == 4) {
-      var h1 = document.createElement("h1")
-      h1.innerText = "Correct!";
-      document.body.appendChild(h1);
-      answers_correct = answers_correct+1;
-      var p = document.createElement("p");
-      p.innerText = "Answers Correct/Wrong: " + answers_wrong + " /Correct: " + answers_correct;
-      document.body.appendChild(p);
-      answers_wrong = answers_wrong+1;
-      var calc = answers_correct/4;
-      var calcTimesHund = calc*100;
-      if(calcTimesHund < 50){
-         alert("You failed this quiz!");
-         document.write("you got " + calc + "%");
-      }else{
-         alert("Good Job! YOU PASSED THIS QUIZ!");
-         document.write("you got " + calc + "%");
-      }
-   }
-}
