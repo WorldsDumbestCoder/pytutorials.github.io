@@ -1,6 +1,6 @@
 var answers_wrong;
 var answers_correct;
-if(!answers_wrong == 3){
+if(answers_wrong == 3){
    alert("Try again next time!");
    window.location.assign("https://pytutorials.github.io/");
 }
