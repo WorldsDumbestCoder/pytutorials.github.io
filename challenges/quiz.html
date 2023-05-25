@@ -63,12 +63,24 @@
 		for planet in planets:
 			print(planet)
 		</p>
-		<input type="checkbox" name="question5" value="1">Output all the planets (not in a list)</input><br/>
-	        <input type="checkbox" name="question5" value="2">Output all the planets in a list</input><br/>
-                <input type="checkbox" name="question5" value="3">Output only one planet in a list</input></br/>
-                <input type="checkbox" name="question5" value="4">Output only one planet (not in a list)</input><br/>
-                <input type="checkbox" name="question5" value="5">Output only two planets in a list</input><br/>
-                <input type="checkbox" name="question5" value="6">Output only two planets (not in a list)</input<br/>
+		<input type="radio" name="question5" value="1">Output all the planets (not in a list)</input><br/>
+	        <input type="radio" name="question5" value="2">Output all the planets in a list</input><br/>
+                <input type="radio" name="question5" value="3">Output only one planet in a list</input></br/>
+                <input type="radio" name="question5" value="4">Output only one planet (not in a list)</input><br/>
+                <input type="radio" name="question5" value="5">Output only two planets in a list</input><br/>
+                <input type="radio" name="question5" value="6">Output only two planets (not in a list)</input<br/>
        </div>
+</div>
+<div class="container">
+	<div class="question-form">
+		<h1>Question 6:</question>
+		<p>What is the output of this code?</p>
+		<p>import os
+		   for items in os.listdir():
+			print(items)</p>
+		<input type="radio" name="question6" value="1">List only files</input>
+		<input type="radio" name="question6" value="2">List only directories</input>
+		<input type="radio" name="question6" value="3">List files and directories</input>
+	</div>
 </div>
 <button id="submit" onclick="checkAnswers()">Submit Answer</button>
