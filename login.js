@@ -9,7 +9,7 @@ function removeUsername(){
 }
 function signup(){
   var username = prompt("Create a username > ");
-  if(!username == null){
+  if(!username == ""){
    localStorage.setItem("username", username);
    alert("Refresh the page to see the changes! ");
   }else{
