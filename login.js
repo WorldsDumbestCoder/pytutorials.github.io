@@ -9,6 +9,10 @@ function removeUsername(){
 }
 function signup(){
   var username = prompt("Create a username > ");
-  localStorage.setItem("username", username);
-  alert("Refresh the page to see the changes! ");
+  if(!username == null){
+   localStorage.setItem("username", username);
+   alert("Refresh the page to see the changes! ");
+  }else{
+    alert("Signup has failed!");
+  }
 }
