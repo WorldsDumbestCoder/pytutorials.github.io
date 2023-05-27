@@ -24,6 +24,10 @@ function checkAnswers() {
       questionElement: document.querySelector("input[name='question6']:checked"),
       answer:3,
     },
+    {
+      questionElement: document.querySelector("input[name='question7']:checked"),
+      answer:2,
+    },
   ];
   var correct = 0;
   var wrong = 0;
