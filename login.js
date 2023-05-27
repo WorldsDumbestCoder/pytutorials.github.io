@@ -6,6 +6,7 @@ if(!localStorage.getItem("username")){
 }
 function removeUsername(){
   localStorage.removeItem("username");
+  window.location.reload();
 }
 function signup(){
   var username = prompt("Create a username > ");
