@@ -50,4 +50,4 @@ For more examples click this [link](tutorials/index)
 
 <iframe src="https://pytutorials5.wordpress.com/2023/05/14/hello-world/" height="500px" width="1000px"></iframe>
 
-<em>Written in HTML, Markdown and JavaScript.</em>
+<em>Written in HTML, Markdown, CSS, and JavaScript.</em>
