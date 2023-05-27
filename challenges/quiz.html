@@ -73,7 +73,7 @@
 </div>
 <div class="container">
 	<div class="question-form">
-		<h1>Question 6:</question>
+		<h1>Question 6:</h1>
 		<p>What is the output of this code?</p>
 		<p>import os
 		   for items in os.listdir():
@@ -82,5 +82,21 @@
 		<input type="radio" name="question6" value="2">List only directories</input>
 		<input type="radio" name="question6" value="3">List files and directories</input>
 	</div>
+</div>
+<div class="container">
+	<div class="question-form">
+		<h1>Question 1:</h1>
+		<p>What does this code output?</p>
+		<p>import os
+		   file = input("Enter a file: ")
+		   if os.path.exists(file):
+			print("The file you've entered exists!")
+		   else:
+			print("The file you've entered doesn't exist")
+		</p>
+		<input type="radio" name="question7" value="2">This code gets user input and then checks if the file exists. If thr file exists, it outputs, "The file exists!", otherwise it outputs, "The file doesn't exist"</input>
+	        <input type="radio" name="question7" value="1">This code checks if the user input "file" is validated</input>
+                
+         </div>
 </div>
 <button id="submit" onclick="checkAnswers()">Submit Answer</button>
