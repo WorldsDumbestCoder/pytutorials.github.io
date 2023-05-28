@@ -6,7 +6,7 @@
 .container2{
   border:solid lightblue;
   position:absolute;
-   left:100%;
+   left:50%;
 }
 button{
  border:solid red;
