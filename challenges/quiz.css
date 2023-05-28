@@ -1,12 +1,11 @@
 .container{
    border:solid blue;
-   position:absolute;
-   right:100%;
 }
 .container2{
   border:solid lightblue;
   position:absolute;
    left:50%;
+   bottom:100%;
 }
 button{
  border:solid red;
