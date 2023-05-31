@@ -1,5 +1,6 @@
 .container{
    border:solid blue;
+   position:absolute;
    bottom:100%;
 }
 .container2{
