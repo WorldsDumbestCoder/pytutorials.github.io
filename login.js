@@ -1,5 +1,5 @@
 if(!localStorage.getItem("username")){
- document.write("<a href='signup'>Signup for free!</a>");
+ document.getElementById("signup").style.display = "block";
 }else{
   document.write("<a href='javascript:removeUsername();'>Logout</a>");
   alert("Welcome Back " + localStorage.getItem("username"));
