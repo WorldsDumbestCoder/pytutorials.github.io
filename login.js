@@ -6,9 +6,7 @@ if(!localStorage.getItem("username")){
    alert("You already signed up.")
    window.history.back();
   }else{
-    if(!window.location.href == "https://pytutorials.github.io/404"){
-     alert("Welcome Back " + localStorage.getItem("username"));
-    }
+    alert("Welcome Back " + localStorage.getItem("username"));
   }
 }
 function removeUsername(){
