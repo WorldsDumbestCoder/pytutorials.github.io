@@ -1,11 +1,8 @@
 function search(){
   var searchValue = document.getElementById("search").value;
-  if(searchValue != ""){
+  if(!searchValue == ""){
      window.location.assign("https://pytutorials.github.io/" + searchValue);
-  }
-  if(searchValue == ""){
-    var h1 = document.createElement("h1");
-    h1.innerText = "Enter a page!";
-    document.body.appendChild(h1);
+  }else{
+    alert("Enter a page");
   }
 }
