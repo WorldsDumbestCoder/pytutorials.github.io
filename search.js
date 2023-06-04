@@ -3,6 +3,6 @@ function search(){
   if(!searchValue == ""){
      window.location.assign("https://pytutorials.github.io/" + searchValue);
   }else{
-    document.write("Enter a page!");
+    document.write("<h1>Enter a page!</h1> <a href='index'>Go Home</a>");
   }
 }
