@@ -5,6 +5,9 @@ if(!localStorage.getItem("username")){
 }else{
   document.write("<a href='javascript:removeUsername();'>Logout</a>");
   alert("Welcome Back " + localStorage.getItem("username"));
+  if(window.location.href == "https://pytutorials.github.io/signup"){
+   document.write("<a href='javascript:removeUsername()'>Logout</a>");
+  }
 }
 function removeUsername(){
   localStorage.removeItem("username");
