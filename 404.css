@@ -1,5 +1,7 @@
 .search-bar{
    width:100%;
+   position:absolute;
+   top:100%;
 }
 h1{
    text-align:center;
