@@ -18,3 +18,4 @@ else:
 This code checks if x is less than 5, equal to 5, and more than 5.
 
 [Test the code](https://onlinegdb.com) | [Next Tutorial](tutorial6) | [Previous Tutorial](tutorial4)
+<p>This site is open source. <a href="https://github.com/pytutorials/pytutorials.github.io/tree/main">Improve this site.</a></p>
