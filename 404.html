@@ -4,11 +4,17 @@
 <h1> 404 - Page Not Found</h1>
 <p>Don't cry it's just a 404.</p>
 <p>The page you're looking for might have been removed.</p>
-<a href="https://pytutorials.github.io/">Go Home</a> | <a href="/tutorials/">Tutorials</a><script>if(!localStorage.getItem("username")){document.write(" | <a href='signup'>Signup</a>");}</script>
+<a href="https://pytutorials.github.io/">Go Home</a> | <a href="/tutorials/">Tutorials</a><script>if(!localStorage.getItem("username")){document.write(" | <a href='signup'>Signup</a>");}else{document.write("<a href='javascript:logout()'>Logout</a>");}</script>
 <div class="search-form">
   <form action="javascript:search()">
     <input type="text" value="" id="search" placeholder="Search for a page..."/>
   </form>
  </div>
 <hr/>
-<script src="search.js"></script>
+<script src="search.js">
+function logout(){
+  localStorage.removeItem("username");
+  alert("Username has been removed!");
+  window.location.reload();
+}
+</script>
