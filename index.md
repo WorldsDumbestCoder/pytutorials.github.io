@@ -11,7 +11,6 @@
 <script src="errorhandle.js"></script>
 <script src="search.js"></script>
 <script src="login.js"></script>
-<script src="https://gist.github.com/dantheman213/140e641c68a523915d632bbedf4af98b.js"></script>
 #### Home
 
 #### Example 1
