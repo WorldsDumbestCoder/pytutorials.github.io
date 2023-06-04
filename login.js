@@ -7,6 +7,7 @@ if(!localStorage.getItem("username")){
   alert("Welcome Back " + localStorage.getItem("username"));
   if(window.location.href == "https://pytutorials.github.io/signup"){
    document.write("<a href='javascript:removeUsername()'>Logout</a>");
+   document.getElementById("Signup-form").style.display = "none";
   }
 }
 function removeUsername(){
