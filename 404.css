@@ -3,6 +3,7 @@
    position:absolute;
    top:95%;
    height:100px;
+   border:solid red;
 }
 h1{
    text-align:center;
