@@ -1,4 +1,4 @@
-var code=['<a href="tutorial6">Tutorial 6</a> <a href="tutorial7">Tutorial 7</a>  <a href="tutorial8">Tutorial 8</a>  <a href="tutorial9">Tutorial 9</a> <a href="tutorial10">Tutorial 10</a>']
+var code=['<a href="tutorial11">Tutorial 11</a> <a href="tutorial12">Tutorial 12</a>  <a href="tutorial13">Tutorial 13</a>  <a href="tutorial14">Tutorial 14</a> <a href="tutorial15">Tutorial 15</a>']
 if(localStorage.getItem("username")){
     document.write(code);
 }else{
