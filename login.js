@@ -9,7 +9,7 @@ function removeUsername(){
   window.location.reload();
 }
 function signup(){
-  var username = document.getElementById("signup-form").value;
+  var username = document.getElementById("signup-form").value;//get the forms value
   if(!username == ""){
    localStorage.setItem("username", username);
    alert("Refresh the page to see the changes! ");
