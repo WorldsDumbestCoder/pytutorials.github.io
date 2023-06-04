@@ -50,7 +50,7 @@ For more examples click this [link](tutorials/index)
 [Test your code here](https://onlinegdb.com)
 
 <iframe src="https://pytutorials5.wordpress.com/2023/05/14/hello-world/" height="500px" width="1000px"></iframe>
-[Python examples](https://github.com/pytutorials/pytutorials.github.io/tree/main/examples)
+[Python examples](https://github.com/pytutorials/Python-Examples)
 <em>Written in HTML, Markdown, CSS, and JavaScript.</em>
 <a href="https://api.github.com/repos/pytutorials/pytutorials.github.io">About this project</a>
 <a href="https://github.com/pytutorials/pytutorials.github.io">View website source code</a>
