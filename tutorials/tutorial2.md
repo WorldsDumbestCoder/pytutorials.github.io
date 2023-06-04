@@ -11,3 +11,4 @@ print("Hello, World!")
 * In this code we tell the computer to output the text "Hello, World!"
 
 [Test the code](https://onlinegdb.com) | <a href="tutorial1.html">Previous Tutorial</a> | <a href="tutorial3">Next Tutorial</a>
+<p>This site is open source. <a href="https://github.com/pytutorials/pytutorials.github.io/tree/main">Improve this site.</a></p>
