@@ -16,3 +16,4 @@ for items in my_list: #This will go through the list
 print(my_list)
 ```
 [Test the code](https://onlinegdb.com) | [Previous Tutorial](tutorial1) | [Next Tutorial](tutorial4)
+<p>This site is open source. <a href="https://github.com/pytutorials/pytutorials.github.io/tree/main">Improve this site.</a></p>
