@@ -14,6 +14,11 @@ function signup(){
    localStorage.setItem("username", username);
    alert("Refresh the page to see the changes! ");
   }else{
-    alert("Signup has failed!");
+    var username2 = prompt("Create a username > ");
+    if(!username2 == ""){
+     localStorage.setItem("username", username);
+    }else{
+     alert("Signup has failed!");
+    }
   }
 }
