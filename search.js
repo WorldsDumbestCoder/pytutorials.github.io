@@ -3,8 +3,7 @@ function search(){
   if(!searchValue == ""){
      window.location.assign("https://pytutorials.github.io/" + searchValue);
   }else{
-    var p = document.createElement("p");
-    p.innerText = "Enter a page!";
-    document.body.appendChild(p);
+    var new_search = prompt("Enter a page on this website");
+    window.location.assign("https://pytutorials.github.io/" + new_search);
   }
 }
