@@ -4,6 +4,7 @@
 <div class="search-form">
   <form action="javascript:search()">
     <input type="text" value="" id="search" placeholder="Search for a page..."/>
+    <noscript>You can't signup or search for different pages if Javascript isn't enabled.</noscript>
   </form>
  </div>
 <hr/>
