@@ -1,7 +1,5 @@
 if(!localStorage.getItem("username")){
- if(!window.location.href == "https://pytutorials.github.io/signup"){
-  document.write("<a href='signup'>Create a username for free</a>");
- }
+ document.write("<a href='javascript:signup()'>Signup for free!</a>");
 }else{
   document.write("<a href='javascript:removeUsername();'>Logout</a>");
   alert("Welcome Back " + localStorage.getItem("username"));
