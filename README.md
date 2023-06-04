@@ -1,2 +1,13 @@
-# pythontutorials
-Learn Python.
+# PyTutorials
+
+## What is PyTutorials
+Pytutorials is a website that teaches you the basics of Python.
+There are 10 avalible courses, and the other courses you have to signup for.
+
+You will learn:
+* What statements are
+* How to write statements
+* How to output text
+* How to get user input
+* How to create a list
+* How to create loops.
