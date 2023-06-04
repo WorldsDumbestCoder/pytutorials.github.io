@@ -6,7 +6,7 @@ if(!localStorage.getItem("username")){
    alert("You already signed up.")
    window.history.back();
   }
-  if(window.location.href == "https://pytutorials.github.io"){
+  if(window.location.href == "https://pytutorials.github.io/"){
     alert("Welcome Back " + localStorage.getItem("username"));
   }
 }
