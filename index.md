@@ -54,4 +54,4 @@ For more examples click this [link](tutorials/index)
 [Python examples](https://github.com/pytutorials/Python-Examples)
 <em>Written in HTML, Markdown, CSS, and JavaScript.</em>
 <a href="https://api.github.com/repos/pytutorials/pytutorials.github.io">About this project</a>
-<a href="https://github.com/pytutorials/pytutorials.github.io">View website source code</a>
+<p>This project is closed source. <a href="https://en.m.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software">What is closed source?</a></p>
