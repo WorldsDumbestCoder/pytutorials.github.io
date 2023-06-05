@@ -12,11 +12,8 @@ function remove_username(){
   alert("You have been signed out! Refresh the page to see the changes");
 }
 function home_settings(){
-  var form = document.getElementById("form").value;
-  alert(form)
-  if(form == 2){
-     var popup_username = false;
-     localStorage.setItem("popup_username=false", popup_username);
-     alert(popup_message);
+  var allow;
+  if(allow == false){
+     localStorage.setItem("popup_username=false");
   }
 }
