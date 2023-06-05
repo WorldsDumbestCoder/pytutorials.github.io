@@ -20,7 +20,7 @@ function removeUsername(){
 function signup(){
   var username = document.getElementById("signup-form").value;//get the forms value.
   if(!username == ""){
-   localStorage.setItem("username", username);
+   localStorage.setItem("username", username.toString());
    document.write("Refresh the page to see the changes. ");
   }else{
     document.write("Fill out the form properly! <a href='signup'>Go to the signup page</a>");
