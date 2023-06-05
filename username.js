@@ -15,6 +15,7 @@ function home_settings(){
   var allow;
   if(allow == false){
      localStorage.setItem("popup_username=false");
+     alert("Changes Saved!");
   }
   if(allow == true){
     if(localStorage.getItem("popup_username=false")){
