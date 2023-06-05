@@ -7,7 +7,7 @@ if(!localStorage.getItem("username")){
    window.history.back();
   }
   if(window.location.href == "https://pytutorials.github.io/"){
-    if(!localStorage.getItem("popup_username") == false){
+    if(!localStorage.getItem("popup_username=false")){
      alert("Welcome Back " + localStorage.getItem("username"));
     }
   }
