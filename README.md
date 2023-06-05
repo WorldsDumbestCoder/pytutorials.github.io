@@ -1,6 +1,7 @@
 # PyTutorials
 
-## What is PyTutorials
+What is PyTutorials
+
 Pytutorials is a website written in HTML, CSS, Markdown and JavaScript that teaches you the basics of Python.
 There are 10 avalible courses, and the other courses you have to signup for.
 
