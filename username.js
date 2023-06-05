@@ -21,4 +21,5 @@ function popup_username(){
    alert("Changes saved!");
  }else{
   alert("This has already been set!");
+ }
 }
