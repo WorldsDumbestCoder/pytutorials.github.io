@@ -12,11 +12,15 @@ function remove_username(){
   alert("You have been signed out! Refresh the page to see the changes");
 }
 function dont_username_popup(){
-  localStorage.setItem("popup_username=false", false);
-  var p = document.createElement("p");
-  p.innerText = "Changes Saved!";
-  p.style.align = "center";
-  document.body.appendChild(p);
+  if(!localStorage.getItem("popup_username=false")){
+    localStorage.setItem("popup_username=false", false);
+    var p = document.createElement("p");
+    p.innerText = "Changes Saved!";
+    p.style.align = "center";
+    document.body.appendChild(p);
+  }else{
+    alert("This is already set.");
+  }
 }
 function popup_username(){
   if(localStorage.getItem("popup_username=false")){
