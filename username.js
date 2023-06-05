@@ -16,4 +16,9 @@ function home_settings(){
   if(allow == false){
      localStorage.setItem("popup_username=false");
   }
+  if(allow == true){
+    if(localStorage.getItem("popup_username=false")){
+      localStorage.removeItem("popup_username=false");
+    }
+  }
 }
