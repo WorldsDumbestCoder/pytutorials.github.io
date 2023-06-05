@@ -1,3 +1,6 @@
+var script = document.createElement("script");
+script.src = "cookies.js";
+document.body.appendChild(script);
 if(!localStorage.getItem("username")){
  document.getElementById("signup").style.display = "block";
 }else{
