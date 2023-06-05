@@ -13,4 +13,5 @@ function remove_username(){
 }
 function dont_username_popup(){
   localStorage.setItem("popup_username=false");
+  alert("Changes saved!");
 }
