@@ -13,7 +13,7 @@ function remove_username(){
 }
 function home_settings(){
   var form = document.getElementById("form").value;
-  if(form.value == 2){
+  if(form == 2){
      var popup_username = false;
      localStorage.setItem("popup_username=false", popup_username);
      alert(popup_message);
