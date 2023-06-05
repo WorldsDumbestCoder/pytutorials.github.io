@@ -25,6 +25,9 @@ function dont_username_popup(){
 function popup_username(){
   if(localStorage.getItem("popup_username=false")){
     localStorage.removeItem("popup_username=false");
+    var p = document.createElement("p");
+    p.innerText = "Changes Saved!";
+    document.body.appendChild(p);
   }else{
     alert("This is already set.");
   }
