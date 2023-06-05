@@ -7,7 +7,9 @@ if(!localStorage.getItem("username")){
    window.history.back();
   }
   if(window.location.href == "https://pytutorials.github.io/"){
-    alert("Welcome Back " + localStorage.getItem("username"));
+    if(!localStorage.getItem("popup_username") == false){
+     alert("Welcome Back " + localStorage.getItem("username"));
+    }
   }
 }
 function removeUsername(){
