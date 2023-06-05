@@ -52,7 +52,7 @@ For more examples click this [link](tutorials/index)
 
 <iframe src="https://pytutorials5.wordpress.com/2023/05/14/hello-world/" height="500px" width="1000px"></iframe>
 [Python examples](https://github.com/pytutorials/Python-Examples)
-<em>Written in HTML, Markdown, CSS, and JavaScript.</em>
 <a href="https://github.com/pytutorials/pytutorials.github.io/blob/main/README.md">About this project</a>
 <p>This project is closed source. <a href="https://en.m.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software">What is closed source?</a></p>
+<footer>Written in HTML, Markdown, CSS, and JavaScript.</footer>
 <a href="#top">Go back to the top of the page</a>
