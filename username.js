@@ -15,3 +15,8 @@ function dont_username_popup(){
   localStorage.setItem("popup_username=false");
   alert("Changes saved!");
 }
+function popup_username(){
+ if(localStorage.getItem("popup_username=false")){
+   localStorage.removeItem("popup_username=false"));
+ }
+}
