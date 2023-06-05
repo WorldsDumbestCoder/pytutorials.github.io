@@ -16,5 +16,9 @@ function dont_username_popup(){
   alert("Changes saved!");
 }
 function popup_username(){
-  alert("not ready yet!");
+  if(localStorage.getItem("popup_username=false")){
+    localStorage.removeItem("popup_username=false");
+  }else{
+    alert("This is already set.");
+  }
 }
