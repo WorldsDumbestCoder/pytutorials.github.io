@@ -55,3 +55,4 @@ For more examples click this [link](tutorials/index)
 <em>Written in HTML, Markdown, CSS, and JavaScript.</em>
 <a href="https://api.github.com/repos/pytutorials/pytutorials.github.io">About this project</a>
 <p>This project is closed source. <a href="https://en.m.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software">What is closed source?</a></p>
+<a href="#top">Go back to the top of the page</a>
