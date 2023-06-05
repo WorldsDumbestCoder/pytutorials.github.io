@@ -12,7 +12,7 @@ function remove_username(){
   alert("You have been signed out! Refresh the page to see the changes");
 }
 function dont_username_popup(){
-  localStorage.setItem("popup_username=false");
+  localStorage.setItem("popup_username=false", false);
   alert("Changes saved!");
 }
 function popup_username(){
