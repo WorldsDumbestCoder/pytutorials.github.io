@@ -1,8 +1,8 @@
 if(!localStorage.getItem("username")){
  document.getElementById("signup").style.display = "block";
 }else{
-  document.write("<a href='javascript:removeUsername();'>Logout</a>");
-  document.write("<a href='username'>Username settings</a>");
+  document.write("<a href='javascript:removeUsername();'>Logout</a><br/>");
+  document.write("<a href='username'>Username settings</a><br/>");
   if(window.location.href == "https://pytutorials.github.io/signup"){
    alert("You already signed up.")
    window.location.assign("username")
