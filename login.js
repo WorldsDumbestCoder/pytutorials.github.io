@@ -1,6 +1,3 @@
-var script = document.createElement("script");
-script.src = "cookies.js";
-document.body.appendChild(script);
 if(!localStorage.getItem("username")){
  document.getElementById("signup").style.display = "block";
 }else{
@@ -24,8 +21,10 @@ function signup(){
   var username = document.getElementById("signup-form").value;//get the forms value.
   if(!username == ""){
    localStorage.setItem("username", username.toString());
-   document.write("Refresh the page to see the changes. ");
+   document.write("<h1>Refresh the page to see the changes.</h1><br/>");
+   document.write("<p>You can now visit the page /username. You've also unlocked more tutorials! <a href='username'>See username settings</a></p><br/>");
+   document.write("<footer>Thank you for using PyTutorials!</footer>");
   }else{
-    document.write("Fill out the form properly! <a href='signup'>Go to the signup page</a>");
+    document.write("<h1>Fill out the form properly!</h1> <a href='signup'>Go to the signup page</a>");
   }
 }
