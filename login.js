@@ -21,7 +21,8 @@ function signup(){
   var username = document.getElementById("signup-form").value;//get the forms value.
   if(!username == ""){
    localStorage.setItem("username", username.toString());
-   document.write("<h1>Refresh the page to see the changes.</h1><br/>");
+   document.write("<h1>Welcome to PyTutorials " + localStorage.getItem("username") + "</h1><br/>");
+   document.write("<h2>Refresh the page to see the changes</h2><br/>");
    document.write("<p>You can now visit the page /username. You've also unlocked more tutorials! <a href='username'>See username settings</a></p><br/>");
    document.write("<footer>Thank you for using PyTutorials!</footer>");
   }else{
