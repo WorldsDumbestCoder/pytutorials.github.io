@@ -3,6 +3,6 @@ if(localStorage.getItem("username")){
     document.write(code);
 }else{
     var p = document.createElement("p");
-    p.innerText = "Signup to unlock more tutorials";
+    p.innerHTML= "<a href='signup'>Signup</a> to unlock more tutorials";
     document.body.appendChild(p);
 }
