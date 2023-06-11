@@ -38,6 +38,7 @@ function popup_username(){
   }else{
     var p = document.createElement("p");
     p.innerText = "This is already set!";
+    p.style.align = "center";
     p.style.color = "red";
     document.body.appendChild(p);
   }
