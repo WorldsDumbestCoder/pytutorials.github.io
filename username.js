@@ -21,7 +21,7 @@ function dont_username_popup(){
     document.body.appendChild(p);
   }else{
     var p = document.createElement("p");
-    p.innerTedt = "This is already set!";
+    p.innerText = "This is already set!";
     p.style.align = "center";
     p.style.color = "red";
     document.body.appendChild(p);
