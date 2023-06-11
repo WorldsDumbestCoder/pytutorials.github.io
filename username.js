@@ -17,18 +17,28 @@ function dont_username_popup(){
     var p = document.createElement("p");
     p.innerText = "Changes Saved!";
     p.style.align = "center";
+    p.style.color = "green";
     document.body.appendChild(p);
   }else{
-    alert("This is already set.");
-  }
+    var p = document.createElement("p");
+    p.innerTedt = "This is already set!";
+    p.style.align = "center";
+    p.style.color = "red";
+    document.body.appendChild(p);
+ }
 }
 function popup_username(){
   if(localStorage.getItem("popup_username=false")){
     localStorage.removeItem("popup_username=false");
     var p = document.createElement("p");
     p.innerText = "Changes Saved!";
+    p.style.align = "center";
+    p.style.color = "green";
     document.body.appendChild(p);
   }else{
-    alert("This is already set.");
+    var p = document.createElement("p");
+    p.innerText = "This is already set!";
+    p.style.color = "red";
+    document.body.appendChild(p);
   }
 }
