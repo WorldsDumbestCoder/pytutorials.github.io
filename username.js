@@ -39,8 +39,8 @@ function popup_username(){
     p.innerText = "Changes Saved!";
     p.style.align = "center";
     p.style.color = "green";
-    document.body.appendChild(p);
     p.onclick = this.style.display = "none";
+    document.body.appendChild(p);
   }else{
     var p = document.createElement("p");
     p.innerText = "This is already set! Click me to undisplay this";
