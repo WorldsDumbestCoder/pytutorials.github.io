@@ -6,7 +6,7 @@ function change_username(){
   var username = prompt("Enter your new username > ");
   localStorage.removeItem("username");
   localStorage.setItem("username", username);
-  vat p = document.createElement("p"):
+  var p = document.createElement("p"):
   p.innerText = "Your username has been saved. Click me to see undisplay this";
   p.addEventListener("click", function(){
     this.style.display = "none";
