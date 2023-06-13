@@ -2,15 +2,17 @@ if(!localStorage.getItem("username")){
   alert("Redirecting you to the signup page");
   window.location.assign("signup");
 }
+function undisplay(){
+  docucument.getElementById("p").style.display = "none";
+}
 function change_username(){
   var username = prompt("Enter your new username > ");
   localStorage.removeItem("username");
   localStorage.setItem("username", username);
   var p = document.createElement("p"):
   p.innerText = "Your username has been saved. Click me to see undisplay this.";
-  p.onclick = function(){
-    p.style.display = "none";
-  }
+  p.onclick = undisplay();
+  p.id = "p";
   document.body.appendChild(p);
 }
 function remove_username(){
@@ -24,19 +26,17 @@ function dont_username_popup(){
     p.innerText = "Changes Saved! Click me to undisplay this.";
     p.style.align = "center";
     p.style.color = "green";
-    p.onclick = function(){
-      p.style.display = "none";
-    }
+    p.id = "p";
+    p.onclick = undisplay();
     document.body.appendChild(p);
   }else{
     var p = document.createElement("p");
     p.innerText = "This is already set! Click me to undisplay this.";
     p.style.align = "center";
+    p.id = "p";
     p.onclick = p.style.display = "none";
     p.style.color = "red";
-    p.onclick = function(){
-      p.style.display = "none";
-    }
+    p.onclick = undisplay();
     document.body.appendChild(p);
  }
 }
@@ -47,17 +47,16 @@ function popup_username(){
     p.innerText = "Changes Saved! Click me to undisplay this.";
     p.style.align = "center";
     p.style.color = "green";
-    p.onclick = function(){
-      p.style.display = "none";
-    }
+    p.onclick = undisplay();
+    p.id = "p";
     document.body.appendChild(p);
   }else{
     var p = document.createElement("p");
     p.innerText = "This is already set! Click me to undisplay this";
     p.style.align = "center";
     p.style.color = "red";
-    p.onclick = function(){
-      p.style.display = "none";
-    }
+    p.id = "p";
+    p.onclick = undisplay();
+    document.body.appendChild(p);
   }
 }
