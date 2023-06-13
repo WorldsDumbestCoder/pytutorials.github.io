@@ -7,11 +7,11 @@ function change_username(){
   localStorage.removeItem("username");
   localStorage.setItem("username", username);
   var p = document.createElement("p"):
-  p.id = "p";
   p.innerText = "Your username has been saved. Click me to see undisplay this.";
-  document.getElementById("p").addEventListener("click", function(){
-    this.style.display = "none";
-  })
+  p.onclick = function(){
+    p.style.display = "none";
+  }
+  document.body.appendChild(p);
 }
 function remove_username(){
   localStorage.removeItem("username");
@@ -24,10 +24,9 @@ function dont_username_popup(){
     p.innerText = "Changes Saved! Click me to undisplay this.";
     p.style.align = "center";
     p.style.color = "green";
-    p.id = "p";
-    document.getElementById("p").addEventListener("click", function(){
-      this.style.display = "none";
-    });
+    p.onclick = function(){
+      p.style.display = "none";
+    }
     document.body.appendChild(p);
   }else{
     var p = document.createElement("p");
@@ -35,10 +34,9 @@ function dont_username_popup(){
     p.style.align = "center";
     p.onclick = p.style.display = "none";
     p.style.color = "red";
-    p.id = "p";
-    document.getElementById("p").addEventListener("click", function(){
-      this.style.display = "none";
-    });
+    p.onclick = function(){
+      p.style.display = "none";
+    }
     document.body.appendChild(p);
  }
 }
@@ -49,22 +47,17 @@ function popup_username(){
     p.innerText = "Changes Saved! Click me to undisplay this.";
     p.style.align = "center";
     p.style.color = "green";
-    p.onclick = p.style.display = "none";
-    p.id = "p";
-    p.addEventListener("click", function(){
-      this.style.display = "none";
-    });
+    p.onclick = function(){
+      p.style.display = "none";
+    }
     document.body.appendChild(p);
   }else{
     var p = document.createElement("p");
     p.innerText = "This is already set! Click me to undisplay this";
     p.style.align = "center";
     p.style.color = "red";
-    p.onclick = p.style.display = "none";
-    p.id = "p";
-    document.getElementById("p").addEventListener("click", function(){
-      this.style.display = "none";
-    });
-    document.body.appendChild(p);
+    p.onclick = function(){
+      p.style.display = "none";
+    }
   }
 }
