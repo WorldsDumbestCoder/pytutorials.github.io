@@ -7,8 +7,9 @@ function change_username(){
   localStorage.removeItem("username");
   localStorage.setItem("username", username);
   var p = document.createElement("p"):
-  p.innerText = "Your username has been saved. Click me to see undisplay this";
-  p.addEventListener("click", function(){
+  p.id = "p";
+  p.innerText = "Your username has been saved. Click me to see undisplay this.";
+  document.getElementById("p").addEventListener("click", function(){
     this.style.display = "none";
   })
 }
@@ -20,17 +21,24 @@ function dont_username_popup(){
   if(!localStorage.getItem("popup_username=false")){
     localStorage.setItem("popup_username=false", false);
     var p = document.createElement("p");
-    p.innerText = "Changes Saved! Click me to undisplay this";
+    p.innerText = "Changes Saved! Click me to undisplay this.";
     p.style.align = "center";
     p.style.color = "green";
-    p.onclick = p.style.display = "none";
+    p.id = "p";
+    document.getElementById("p").addEventListener("click", function(){
+      this.style.display = "none";
+    });
     document.body.appendChild(p);
   }else{
     var p = document.createElement("p");
-    p.innerText = "This is already set! Click me to undisplay this";
+    p.innerText = "This is already set! Click me to undisplay this.";
     p.style.align = "center";
     p.onclick = p.style.display = "none";
     p.style.color = "red";
+    p.id = "p";
+    document.getElementById("p").addEventListener("click", function(){
+      this.style.display = "none";
+    });
     document.body.appendChild(p);
  }
 }
@@ -38,10 +46,14 @@ function popup_username(){
   if(localStorage.getItem("popup_username=false")){
     localStorage.removeItem("popup_username=false");
     var p = document.createElement("p");
-    p.innerText = "Changes Saved!";
+    p.innerText = "Changes Saved! Click me to undisplay this.";
     p.style.align = "center";
     p.style.color = "green";
     p.onclick = p.style.display = "none";
+    p.id = "p";
+    p.addEventListener("click", function(){
+      this.style.display = "none";
+    });
     document.body.appendChild(p);
   }else{
     var p = document.createElement("p");
@@ -49,6 +61,10 @@ function popup_username(){
     p.style.align = "center";
     p.style.color = "red";
     p.onclick = p.style.display = "none";
+    p.id = "p";
+    document.getElementById("p").addEventListener("click", function(){
+      this.style.display = "none";
+    });
     document.body.appendChild(p);
   }
 }
