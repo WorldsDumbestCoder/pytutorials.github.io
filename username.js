@@ -23,17 +23,13 @@ function dont_username_popup(){
     p.innerText = "Changes Saved! Click me to undisplay this";
     p.style.align = "center";
     p.style.color = "green";
-    p.addEventListener("click", function(){
-      this.style.display = "none";
-    });
+    p.onclick = p.style.display = "none";
     document.body.appendChild(p);
   }else{
     var p = document.createElement("p");
     p.innerText = "This is already set! Click me to undisplay this";
     p.style.align = "center";
-    p.addEventListener("click", function(){
-      this.style.display = "none";
-    });
+    p.onclick = p.style.display = "none";
     p.style.color = "red";
     document.body.appendChild(p);
  }
@@ -45,18 +41,14 @@ function popup_username(){
     p.innerText = "Changes Saved!";
     p.style.align = "center";
     p.style.color = "green";
-    p.addEventListener("click", function(){
-      this.style.display ="none";
-    });
+    p.onclick = p.style.display = "none";
     document.body.appendChild(p);
   }else{
     var p = document.createElement("p");
     p.innerText = "This is already set! Click me to undisplay this";
     p.style.align = "center";
     p.style.color = "red";
-    p.addEventListener("click", function(){
-      this.style.display = "none";
-    });
+    p.onclick = p.style.display = "none";
     document.body.appendChild(p);
   }
 }
