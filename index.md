@@ -12,6 +12,7 @@
 <script src="errorhandle.js"></script>
 <script src="search.js"></script>
 <script src="login.js"></script>
+<script src="timesVisited.js"></script>
 #### Home
 
 #### Example 1
