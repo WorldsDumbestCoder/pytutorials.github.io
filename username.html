@@ -1,13 +1,41 @@
-<title>Pytutorials - Username Settings</title>
-<h1>Username Settings</h1>
-<script src="username.js"></script>
-<link rel="stylesheet" href="username.css"/>
-<div class="settings-username">
-  <h2>Change your username</h2>
-  <p><a href="javascript:change_username()">Click here to change your username</a></p>
-  <h2>Remove your username</h2>
-  <p><a href="javascript:remove_username()">Remove your username</a></p>
-  <h2>Display username on onload</h2>
-  <a href="javascript:popup_username()">Allow</a>
-  <a href="javascript:dont_username_popup()">Don't allow</a>
+<title>
+Pytutorials - Username Settings
+</title>
+
+<h1>
+Username Settings
+</h1>
+
+<p>
+<div id="username" class="username">
+&nbsp;
 </div>
+</p>
+
+<button onclick="add_user()">
+add user
+</button>
+
+<button onclick="remove_user()">
+remove user
+</button>
+
+<button onclick="show_user()">
+show user
+</button>
+<style>
+  .username {
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: silver;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.success {
+  color: green;
+}
+
+.alert {
+  color: red;
+}
