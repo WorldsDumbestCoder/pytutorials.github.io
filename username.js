@@ -3,6 +3,7 @@ function show_user() {
 	let username = localStorage.getItem("username");
 	p.innerText = `Your username is ${username}`;
 	p.style.textAlign = "center";
+	p.style.color = "lightblue";
 }
 function add_user() {
 	let username = prompt("Enter your new username > ");
