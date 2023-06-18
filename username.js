@@ -11,13 +11,12 @@ function change_username(){
   p.style.color = "green";
   p.style.align = "center";
   document.body.appendChild(p);
-  var button = document.createElement("button");
-  button.onclick = undisplay();
-  button.innerText = "Undisplay the paragraph";
-  document.body.appendChild(button);
-}
-function undisplay(){
-  document.getElementById("p").style.display = "none";
+  var thanksNote = document.createElement("footer");
+  thanksNote.innerHTML = "<footer>Thanks for using <em>PyTutorials</em></footer>";
+  thanksNote.style.position = "absolute";
+  thanksNote.style.align = "center";
+  thanksNote.top = "100%";
+  
 }
 function remove_username(){
   localStorage.removeItem("username");
@@ -30,22 +29,25 @@ function dont_username_popup(){
     p.innerText = "Changes Saved!";
     p.style.align = "center";
     p.style.color = "green";
-    var button = document.createElement("button");
-    button.innerText = "Clock me to undisplay the paragraph";
-    document.body.appendChild(button);
     document.body.appendChild(p);
+    var thanksNote = document.createElement("footer");
+    thanksNote.innerHTML = "<footer>Thanks for using <em>PyTutorials</em></footer>";
+    thanksNote.style.position = "absolute";
+    thanksNote.style.top = "100%":
+    thanksNote.style.align = "center":
+    document.body.appendChild(thanksNote);
   }else{
     var p = document.createElement("p");
     p.innerText = "This is already set!";
     p.style.align = "center";
     p.style.color = "red";
-    p.id = "p";
-    var button = document.createElement("button");
-    button.innerText = "Click me to undisplay the paragraph";
-    button.onclick = undisplay();
-    document.body.appendChild(button);
+    var thanksNote = document.createElement("footer");
+    thanksNote.innerHTML = "<footer>Thank you for using <em>PyTutorials</em></footer>";
+    thanksNote.style.align = "center";
+    thanksNote.style.positon = "absolute";
+    thanksNote.style.top = "100%";
+    document.body.appendChild(thanksNote);
     document.body.appendChild(p);
-    
  }
 }
 function popup_username(){
@@ -55,22 +57,24 @@ function popup_username(){
     p.innerText = "Changes Saved!";
     p.style.align = "center";
     p.style.color = "green";
-    p.id = "p";
-    document.body.appendChild(p);
-    var button = document.createElement("button");
-    button.innerText = "Click me to display the paragraph";
-    button.onclick = undisplay();
-    document.body.appendChild(button);
+    var thanksNote = document.createElement("footer");
+    thanksNote.innerHTML ="<footer>Thank you for using <em>PyTutorials</em></footer>";
+    thanksNote.style.top = "100%";
+    thanksNote.position = "absolute";
+    thanksNote.style.align = "center";
+    document.body.appendChild(thanksNote);
+    document.body.appendChild(p); 
   }else{
     var p = document.createElement("p");
     p.innerText = "This is already set!";
     p.style.align = "center";
     p.style.color = "red";
-    p.id = "p";
-    var button = document.createElement("button");
-    button.innerText = "Undispay the paragraph";
-    button.onclick = undisplay();
-    document.body.appendChild(button);
     document.body.appendChild(p);
+    var thanksNote = document.createElement("footer");
+    thanksNote.innerHTML = "<footer>Thank you for using <em>PyTutorials</em></footer>";
+    thanksNote.style.align = "center";
+    thanksNote.style.top = "100%";
+    thanksNote.style.position = "absolute";
+    document.body.appendChild(thanksNote);
   }
 }
