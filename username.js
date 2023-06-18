@@ -1,5 +1,8 @@
 function show_user() {
-	alert(localStorage.getItem("username"));
+	let p = document.getElementById("username");
+	let username = localStorage.getItem("username");
+	p.innerText = `Your username is ${username}`;
+	p.style.textAlign = "center";
 }
 function add_user() {
 	let username = prompt("Enter your new username > ");
