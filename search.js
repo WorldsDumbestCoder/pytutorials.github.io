@@ -1,11 +1,16 @@
 alert("Search.js added!");
 function search(){
-  alert("Search has been called!");
   var searchInput = document.getElementById("search");
   var searchValue = searchInput.value;
+  if(!searchInput){
+    document.write("JavaScript Error: searchInput not found");
+    return false;
+  }
   if(searchValue != null && searchValue != "")){
      window.location.assign("https://pytutorials.github.io/" + searchValue);
-  }else{
+     return false;
+  }
+  if(searchValue == null || searchValue == ""){
     searchInput.value = "";
     var h1 = document.createElement("h1");
     h1.innerText = "Enter a page!";
@@ -20,14 +25,6 @@ function search(){
     document.body.appendChild(h1);
     document.body.appendChild(br);
     document.body.appendChild(em);
-  }
-}
-function searchDefined(){
-  var searchBar = document.getElementById("search");
-  if(!searchBar){
-    alert("Search bar is undefined!");
-  }else{
-    alert("Running search function!");
-    search();
+    return false;
   }
 }
