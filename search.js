@@ -1,10 +1,10 @@
 function search(){
-  var searchValue = document.getElementById("search").value;
+  var searchInput = document.getElementById("search");
+  var searchValue = searchInput.value;
   if(!(searchValue == "")){
      window.location.assign("https://pytutorials.github.io/" + searchValue);
   }else{
-    var placeHolderValue = document.getElementById("search").placeholder;
-    placeHolderValue = "Enter a page!";
+    searchInput.value = "";
     var h1 = document.createElement("h1");
     h1.innerText = "Enter a page!";
     h1.style.position = "absolite";
