@@ -1,4 +1,5 @@
 function search(){
+  alert("Search has been called!");
   var searchInput = document.getElementById("search");
   var searchValue = searchInput.value;
   if(!searchInput){
