@@ -9,6 +9,10 @@
   </form>
  </div>
 <hr/>
+<script src="search.js"></script>
+<script src="errorhandle.js"></script>
+<script src="login.js"></script>
+<script src="timesVisited.js"></script>
 #### Home
 
 #### Example 1
@@ -53,7 +57,3 @@ For more examples click this [link](tutorials/index)
 <p>This project is closed source. <a href="https://en.m.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software">What is closed source?</a></p>
 <footer>Written in HTML, Markdown, CSS, and JavaScript.</footer>
 <a href="#top">Go back to the top of the page</a>
-<script src="search.js"></script>
-  <script src="errorhandle.js"></script>
-  <script src="login.js"></script>
-  <script src="timesVisited.js"></script>
