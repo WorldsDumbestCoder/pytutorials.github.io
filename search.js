@@ -1,6 +1,6 @@
 function search(){
   var searchValue = document.getElementById("search").value;
-  if(!searchValue == ""){
+  if(!(searchValue == "")){
      window.location.assign("https://pytutorials.github.io/" + searchValue);
   }else{
     var h1 = document.createElement("h1");
@@ -11,7 +11,7 @@ function search(){
     var em = document.createElement("em");
     em.innerText = "Thanks for using PyTutorials!";
     em.style.position = "absolute";
-    em.style.top = "100%":
+    em.style.top = "100%";
     em.style.right = "50%";
     document.body.appendChild(h1);
     document.body.appendChild(br);
