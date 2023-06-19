@@ -4,5 +4,7 @@ if(!localStorage.getItem("timesvisited")){
   alert("You visited " + localStorage.getItem("timesvisited")+ " time(s)");
 }else{
  timesVisited+=1;
+ localStorage.removeItem("timesvisited");
+ localStorage.setItem("timesVisited", timesVisited);
  alert("You visited this page " + localStorage.getItem("timesvisited") + " times");
 }
