@@ -22,6 +22,5 @@ function search(){
     document.body.appendChild(h1);
     document.body.appendChild(br);
     document.body.appendChild(em);
-    alert(console.error);
   }
 }
