@@ -1,8 +1,9 @@
 function search(){
   var searchInput = document.getElementById("search");
   var searchValue = searchInput.value;
+  alert("SearchInput value: " + searchInput + " SearchValue value: " ,searchValue);
   if(searchValue == null && searchValue != "")){
-     window.location.assign("https://pytutorials.github.io/" + searchValue);
+     window.location.assign("https://pytutorials.github.io/" , searchValue);
   }else{
     searchInput.value = "";
     var h1 = document.createElement("h1");
