@@ -1,3 +1,4 @@
+alert("Search.js added!");
 function search(){
   alert("Search has been called!");
   var searchInput = document.getElementById("search");
