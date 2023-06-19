@@ -26,6 +26,14 @@ function signup(){
    document.write("<p>You can now visit the page /username. You've also unlocked more tutorials! <a href='username'>See username settings</a></p><br/>");
    document.write("<footer>Thank you for using PyTutorials!</footer>");
   }else{
-    document.write("<h1>Fill out the form properly!</h1> <a href='signup'>Go to the signup page</a>");
+   var message = document.createElement("h1");
+   message.innerText = "Fill out the oage properly!";
+   message.textAlign = "center";
+   message.style.color = "red";
+   document.body.appendChild(message);
+   var refresh = document.createElement("a");
+   a.innerText = "Reload the page";
+   a.href = "signup";
+   document.body.appendChild(a);
   }
 }
