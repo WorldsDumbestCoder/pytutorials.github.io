@@ -24,8 +24,9 @@ function search(){
 function searchDefined(){
   var searchBar = document.getElementById("search");
   if(!searchBar){
-    alert("JavaScript Error: searchBar not defined!");
+    alert("Search bar is undefined!");
   }else{
+    alert("Running search function!");
     search();
   }
 }
