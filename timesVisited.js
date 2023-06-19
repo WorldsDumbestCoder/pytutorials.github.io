@@ -7,5 +7,5 @@ if(!localStorage.getItem("timesvisited")){
  localStorage.setItem("timesvisited", timesVisited);//set The times visited
  alert("You visited this page " + localStorage.getItem("timesvisited") + " times");//output the times visited.
  if(timesVisited > 100 || timesVisited == 100){
-   alert("Thank You for visiting our page " + localStorage.getItem("timesvisited"));
+   alert("Thank You for visiting our page " + timesVisited + "!");
 }
