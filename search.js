@@ -1,7 +1,7 @@
 function search(){
   var searchInput = document.getElementById("search");
   var searchValue = searchInput.value;
-  if(!(searchValue == "")){
+  if(searchValue == null && searchValue != "")){
      window.location.assign("https://pytutorials.github.io/" + searchValue);
   }else{
     searchInput.value = "";
