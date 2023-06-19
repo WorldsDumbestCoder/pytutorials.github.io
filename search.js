@@ -3,8 +3,13 @@ function search(){
   if(!searchValue == ""){
      window.location.assign("https://pytutorials.github.io/" + searchValue);
   }else{
-    document.write("<h1 style='font-family:cursive;'>Enter a page!</h1><br/>");
-    document.write("<a href='index'>Go Home</a><br/>");
-    document.write("<em>Thanks for using PyTutorials!</em>");
+    var h1 = document.createElement("h1");
+    h1.innerText = "Enter a page!";
+    var br = document.createElement("br");
+    var em = document.createElement("em");
+    em.innerText = "Thanks for using PyTutorials!";
+    document.body.appendChild(h1);
+    document.body.appendChild(br):
+    document.body.appendChild(em);
   }
 }
