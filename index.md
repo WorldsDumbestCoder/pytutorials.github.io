@@ -1,7 +1,4 @@
 <head>
-  <script src="errorhandle.js"></script>
-  <script src="login.js"></script>
-  <script src="timesVisited.js"></script>
 </head>
 <body>
   # PyTutorials - Home
@@ -60,4 +57,7 @@ For more examples click this [link](tutorials/index)
 <footer>Written in HTML, Markdown, CSS, and JavaScript.</footer>
 <a href="#top">Go back to the top of the page</a>
 <script src="search.js"></script>
+  <script src="errorhandle.js"></script>
+  <script src="login.js"></script>
+  <script src="timesVisited.js"></script>
 </body>
