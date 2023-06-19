@@ -7,7 +7,7 @@ function search(){
     return;
   }
   if(searchValue != null && searchValue != "")){
-     window.location.assign("https://pytutorials.github.io/" , searchValue);
+     window.location.assign("https://pytutorials.github.io/" + searchValue);
   }else{
     searchInput.value = "";
     var h1 = document.createElement("h1");
