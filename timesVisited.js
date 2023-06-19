@@ -1,4 +1,4 @@
-var timesVisited = 1;
+let timesVisited = 1;
 if(!localStorage.getItem("timesvisted")){
   localStorage.setItem("timesvisited", timesVisited);
   alert("You visited " + localStorage.getItem("timesVisited" + " time(s)";
