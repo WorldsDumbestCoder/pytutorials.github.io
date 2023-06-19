@@ -9,7 +9,7 @@ function search(){
     var em = document.createElement("em");
     em.innerText = "Thanks for using PyTutorials!";
     document.body.appendChild(h1);
-    document.body.appendChild(br):
+    document.body.appendChild(br);
     document.body.appendChild(em);
   }
 }
