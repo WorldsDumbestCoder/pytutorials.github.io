@@ -1,7 +1,7 @@
-# PyTutorials - Home
-<p>print("Hello World!")</p>
-
-<a href="index">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a> | <a id="signup" href="signup" style="display:none;">Signup</a>
+<body>
+  # PyTutorials - Home
+  <p>print("Hello World!")</p>
+  <a href="index">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a> | <a id="signup" href="signup" style="display:none;">Signup</a>
 <div class="search-form">
   <form onsubmit="search(); return false;">
     <input type="text" value="" id="search" placeholder="Search for a page..."/>
@@ -58,3 +58,4 @@ For more examples click this [link](tutorials/index)
 <p>This project is closed source. <a href="https://en.m.wikipedia.org/wiki/Comparison_of_open-source_and_closed-source_software">What is closed source?</a></p>
 <footer>Written in HTML, Markdown, CSS, and JavaScript.</footer>
 <a href="#top">Go back to the top of the page</a>
+</body>
