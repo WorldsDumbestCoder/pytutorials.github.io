@@ -5,7 +5,7 @@
   <p>print("Hello World!")</p>
   <a href="index">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a> | <a id="signup" href="signup" style="display:none;">Signup</a>
 <div class="search-form">
-  <form onsubmit="search(); return false;">
+  <form onsubmit="search(); return false; alert('loading search function');">
     <input type="text" value="" id="search" placeholder="Search for a page..."/>
     <button id="submit">Submit(may not work)</button>
     <noscript>You can't signup or search for different pages if Javascript isn't enabled.</noscript>
