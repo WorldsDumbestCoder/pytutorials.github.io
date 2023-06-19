@@ -7,7 +7,7 @@ function search(){
     searchInput.value = "";
     var h1 = document.createElement("h1");
     h1.innerText = "Enter a page!";
-    h1.style.position = "absolite";
+    h1.style.position = "absolute";
     h1.style.bottom = "100%";
     var br = document.createElement("br");
     var em = document.createElement("em");
