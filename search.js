@@ -6,7 +6,7 @@ function search(){
     document.write("JavaScript Error: searchInput not found");
     return false;
   }
-  if(searchValue != null && searchValue != "")){
+  if(searchValue != null && searchValue != ""){
      window.location.assign("https://pytutorials.github.io/" + searchValue);
      return false;
   }
