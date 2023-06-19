@@ -3,7 +3,7 @@ if(!localStorage.getItem("timesvisited")){
   localStorage.setItem("timesvisited", timesVisited);
   alert("You visited " + localStorage.getItem("timesvisited")+ " time(s)");
 }else{
- timesVisited+=1;
+ timesVisited = localStorage.getItem("timesvisited")+1;
  localStorage.removeItem("timesvisited");
  localStorage.setItem("timesVisited", timesVisited);
  alert("You visited this page " + localStorage.getItem("timesvisited") + " times");
