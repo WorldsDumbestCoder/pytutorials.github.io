@@ -2,10 +2,6 @@ function search(){
   alert("Search has been called!");
   var searchInput = document.getElementById("search");
   var searchValue = searchInput.value;
-  if(!searchInput){
-    alert("Error searching: SearchInput not found!");
-    return;
-  }
   if(searchValue != null && searchValue != "")){
      window.location.assign("https://pytutorials.github.io/" + searchValue);
   }else{
@@ -23,5 +19,13 @@ function search(){
     document.body.appendChild(h1);
     document.body.appendChild(br);
     document.body.appendChild(em);
+  }
+}
+function searchDefined(){
+  var searchBar = document.getElementById("search");
+  if(!searchBar){
+    alert("JavaScript Error: searchBar not defined!");
+  }else{
+    search();
   }
 }
