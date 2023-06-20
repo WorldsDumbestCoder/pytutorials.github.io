@@ -13,7 +13,7 @@ function search(){
   if(searchValue){
     if(searchValue != ""){
       window.location.assign("https://pytutorials.github.io/" + searchValue);
-      return true;
+      return false;//SearchValue is not valid
     }
     if(searchValue == null || searchValue == ""){
       var h1 = document.createElement("h1");
