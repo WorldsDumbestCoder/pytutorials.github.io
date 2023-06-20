@@ -8,12 +8,12 @@ function search(){
     searchNotFound.onclick = searchInput.style.display = "block";
     document.body.appendChild(searchNotFound);
     alert("Search value is " + searchValue);
-    return false;
+    return true;
   }
   if(searchValue){
     if(searchValue != ""){
       window.location.assign("https://pytutorials.github.io/" + searchValue);
-      return false;
+      return true;
     }
     if(searchValue == null || searchValue == ""){
       var h1 = document.createElement("h1");
@@ -29,7 +29,7 @@ function search(){
       document.body.appendChild(h1);
       document.body.appendChild(br);
       document.body.appendChild(em);
-      return false;
+      return true;
     }
   }
 }
