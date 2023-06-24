@@ -1,7 +1,8 @@
 function show_user(){
 	var username = localStorage.getItem("username");
 	var user = document.getElementById("username");
-	user.value = "Your username is " + user;
+	let message = ‘{username}’;
+	user.value = message;
 	user.style.color = "green";
 }
 function add_user(){
@@ -16,4 +17,5 @@ function remove_user(){
 	username.value = "Your username " + localStorage.getItem("username") + " has been removed";
 	username.style.color = "red";
 	localStorage.removeItem("username");
+	alert("Username has been removed! Refresh the page to see the changes");
 }
