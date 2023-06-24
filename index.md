@@ -4,7 +4,7 @@
 <div class="search-form">
   <form action="javascript:search();">
     <input type="text" value="" id="search" placeholder="Search for a page..."/>
-    <button onlckck="searchDefined();" id="submit">Submit(may not work)</button>
+    <button onlckck="search()" id="submit">Submit</button>
     <noscript>You can't signup or search for different pages if Javascript isn't enabled.</noscript>
   </form>
 </div>
