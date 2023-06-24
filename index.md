@@ -2,12 +2,12 @@
   <p>print("Hello World!")</p>
   <a href="index">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a> | <a id="signup" href="signup" style="display:none;">Signup</a>
 <div class="search-form">
-  <form action="javascript:searchDefined();">
+  <form action="javascript:search();">
     <input type="text" value="" id="search" placeholder="Search for a page..."/>
     <button onlckck="searchDefined();" id="submit">Submit(may not work)</button>
     <noscript>You can't signup or search for different pages if Javascript isn't enabled.</noscript>
   </form>
- </div>
+</div>
 <hr/>
 <script src="search.js"></script>
 <script src="errorhandle.js"></script>
