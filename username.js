@@ -1,9 +1,8 @@
 function show_user(){
 	var username = localStorage.getItem("username");
-	var user = document.getElementById("username");
-	let message = ‘{username}’;
-	user.value = message;
-	user.style.color = "green";
+	var user = document.createElement("p");
+	user.value = username;
+	document.body.appendChild(p);
 }
 function add_user(){
 	var user = prompt("Create your username: ");
