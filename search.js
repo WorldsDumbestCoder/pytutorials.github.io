@@ -3,6 +3,10 @@ function search(){
   if(searchValue != ""){
     window.location.assign(searchValue);
   }else{
-    alert("Properly fill out the search form!");
+    var h1 = document.createElement("h1");
+    h1.innerText = "Search for a page";
+    h1.style.position = "absolute";
+    h1.style.bottom = "100%";
+    document.body.appendChild(h1);
   }
 }
