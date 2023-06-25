@@ -1,12 +1,19 @@
 function add_user(){
 	if(!localStorage.getItem("username")){
 		var user = prompt("Create your username: ");
-		localStorage.setItem("username", user);
-		var p = document.createElement("p");
-		p.style.color = "green";
-		p.style.textAlign = "center";
-		p.innerText = "Your username has been created";
-		document.body.appendChild(p);
+		if(!user = null || user != ""){
+			localStorage.setItem("username", user);
+			var p = document.createElement("p");
+			p.style.color = "green";
+			p.style.textAlign = "center";
+			p.innerText = "Your username has been created";
+			document.body.appendChild(p);
+		}else{
+			var p = document.createElement("p");
+			p.innerText = "Failed to create username! Username";
+			p.style.textAlign = "center";
+			document.body.appendChild(p);
+		}
 	}else{
 		var p = document.createElement("p");
 		var a = document.createElement("a");
