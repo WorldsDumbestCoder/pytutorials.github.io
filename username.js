@@ -42,7 +42,7 @@ function add_user(){
 }
 function remove_user(){
 	if(localStorage.getItem("username")){
-		var username = document.createElement("p");
+		var p = document.createElement("p");
 		p.innerText = "Your username has been removed. Reload the page to see the changes.";
 		p.style.textAlign = "center";
 		p.style.color = "green";
