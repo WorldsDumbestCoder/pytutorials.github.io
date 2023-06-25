@@ -1,18 +1,16 @@
 function show_user(){
 	var username = localStorage.getItem("username");
-	var user = document.createElement("p");
-	user.innerText = "Your username is " + username;
-	user.style.position = "absolute";
-	user.style.bottom = "100%";
-	user.style.textAlign = "center";
-	document.body.appendChild(user);
+	var p = document.createElement("p");
+	p.innerText = username;
+	document.body.appendChild(p);
+	
 }
 function add_user(){
 	var user = prompt("Create your username: ");
 	localStorage.setItem("username", user);
-	var username = document.getElementById("username");
-	username.value = "Your username is " + user;
-	username.style.color = "lightblue";
+	var p = document.createElement("p");
+	p.innerText = "Your username has been created";
+	document.body.appendChild(p);
 }
 function remove_user(){
 	var username = document.getElementById("username");
