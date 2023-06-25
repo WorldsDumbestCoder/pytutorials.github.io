@@ -24,12 +24,16 @@ function add_user(){
 		var user = prompt("Create your username: ");
 		localStorage.setItem("username", user);
 		var p = document.createElement("p");
+		p.style.color = "green";
+		p.style.textAlign = "center";
 		p.innerText = "Your username has been created";
 		document.body.appendChild(p);
 	}else{
 		var p = document.createElement("p");
 		var a = document.createElement("a");
-		p.innerText = "Your username has already been created.";
+		p.innerText = "Your username was already created.";
+		p.style.color = "red";
+		p.style.textAlign = "center";
 		a.href = "javascript:change_user()";
 		a.innerText = "Change your username";
 		document.body.appendChild(p);
