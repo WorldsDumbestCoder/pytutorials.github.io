@@ -1,3 +1,8 @@
+function change_user(){
+	var username = prompt("Create a username: ");
+	localStorage.removeItem("username");
+	localStorage.setItem("username", username);
+}
 function show_user(){
 	var username = localStorage.getItem("username");
 	if(username){
@@ -15,20 +20,37 @@ function show_user(){
 	}
 }
 function add_user(){
-	var user = prompt("Create your username: ");
-	localStorage.setItem("username", user);
-	var p = document.createElement("p");
-	p.innerText = "Your username has been created";
-	document.body.appendChild(p);
+	if(!localStorage.getItem("username")){
+		var user = prompt("Create your username: ");
+		localStorage.setItem("username", user);
+		var p = document.createElement("p");
+		p.innerText = "Your username has been created";
+		document.body.appendChild(p);
+	}else{
+		var p = document.createElement("p");
+		var a = document.createElement("a");
+		p.innerText = "Your username has already been created.";
+		a.href = "javascript:change_user()";
+		a.innerText = "Change your username";
+		document.body.appendChild(p);
+		document.body.appendChild(a);
+	}
 }
 function remove_user(){
-	var username = document.createElement("p");
-	p.innerText = "Your username has been removed. Reload the page to see the changes.";
-	p.style.textAlign = "center";
-	document.body.appendChild(p);
-}
-function change_user(){
-	var username = prompt("Create a username: ");
-	localStorage.removeItem("username");
-	localStorage.setItem("username", username);
+	if(localStorage.getItem("username")){
+		var username = document.createElement("p");
+		p.innerText = "Your username has been removed. Reload the page to see the changes.";
+		p.style.textAlign = "center";
+		document.body.appendChild(p);
+		localStorage.removeItem("username");
+	}else{
+		var p = document.createElement("p");
+		var a = document.createElement("a");
+		p.innerText = "Username not found";
+		p.style.textAlign = "center";
+		a.innerText = "Create a username";
+		a.href = "javascript:add_user()";
+		document.body.appendChild(p);
+		document.body.appendChild(a);
+	}
 }
