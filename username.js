@@ -1,9 +1,18 @@
 function show_user(){
 	var username = localStorage.getItem("username");
-	var p = document.createElement("p");
-	p.innerText = username;
-	document.body.appendChild(p);
-	
+	if(username){
+		var p = document.createElement("p");
+		p.innerText = username;
+		p.style.color = "green";
+		p.style.textAlign = "center";
+		document.body.appendChild(p);
+	}else{
+		var p = document.createElement("p");
+		p.innerText = "Your username was not found";
+		p.style.color = "red";
+		p.style.textAlign = "center";
+		document.body.appendChild(p);
+	}
 }
 function add_user(){
 	var user = prompt("Create your username: ");
