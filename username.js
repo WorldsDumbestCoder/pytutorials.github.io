@@ -21,3 +21,8 @@ function remove_user(){
 	localStorage.removeItem("username");
 	alert("Username has been removed! Refresh the page to see the changes");
 }
+function change_user(){
+	var username = prompt("Create a username: ");
+	localStorage.removeItem("username");
+	localStorage.setItem("username", username);
+}
