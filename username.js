@@ -10,7 +10,7 @@ function add_user(){
 	}else{
 		var p = document.createElement("p");
 		var a = document.createElement("a");
-		p.innerText = "Username not found";
+		p.innerText = "Username already created.";
 		p.style.color = "red";
 		p.style.textAlign = "center";
 		a.innerText = "Go Home";
