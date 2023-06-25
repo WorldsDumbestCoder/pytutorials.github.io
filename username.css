@@ -5,11 +5,6 @@
   background-color: silver;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-
-.success {
-  color: green;
-}
-
-.alert {
-  color: red;
+.username_header{
+  text-align:center;
 }
