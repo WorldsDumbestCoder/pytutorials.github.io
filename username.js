@@ -22,11 +22,10 @@ function add_user(){
 	document.body.appendChild(p);
 }
 function remove_user(){
-	var username = document.getElementById("username");
-	username.value = "Your username " + localStorage.getItem("username") + " has been removed";
-	username.style.color = "red";
-	localStorage.removeItem("username");
-	alert("Username has been removed! Refresh the page to see the changes");
+	var username = document.createElement("p");
+	p.innerText = "Your username has been removed";
+	p.style.textAlign = "center";
+	document.body.appendChild(p);
 }
 function change_user(){
 	var username = prompt("Create a username: ");
