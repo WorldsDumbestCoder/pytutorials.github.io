@@ -34,13 +34,9 @@ function show_user(){
 		document.body.appendChild(p);
 	}else{
 		var p = document.createElement("p");
-		var a = doocument.createElement("a");
 		p.innerText = "Your username was not found";
 		p.style.color = "red";
 		p.style.textAlign = "center";
-		a.innerText = "Create a username";
-		a.href = "javascript:add_user()";
-		document.body.appendChild(a);
 		document.body.appendChild(p);
 	}
 }
