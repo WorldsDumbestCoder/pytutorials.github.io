@@ -23,7 +23,7 @@ function add_user(){
 }
 function remove_user(){
 	var username = document.createElement("p");
-	p.innerText = "Your username has been removed";
+	p.innerText = "Your username has been removed. Reload the page to see the changes.";
 	p.style.textAlign = "center";
 	document.body.appendChild(p);
 }
