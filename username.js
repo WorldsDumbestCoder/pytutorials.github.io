@@ -8,10 +8,6 @@ function add_user(){
 			p.style.textAlign = "center";
 			p.innerText = "Your username has been created";
 			document.body.appendChild(p);
-			var thanksNote = document.createElement("em");
-			thanksNote.style.textAlign = "center";
-			thanksNote.innerText = "Thank you for using Pytutorials";
-			document.body.appendChild(thanksNote);
 		}else{
 			var p = document.createElement("p");
 			p.innerText = "Failed to create username!";
@@ -21,7 +17,7 @@ function add_user(){
 	}else{
 		var p = document.createElement("p");
 		var a = document.createElement("a");
-		p.innerText = "Username already created.";
+		p.innerText = "Username already created."
 		p.style.color = "red";
 		p.style.textAlign = "center";
 		a.innerText = "Go Home";
