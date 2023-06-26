@@ -40,8 +40,13 @@ function change_user(){
 		}
 	}else{
 		var mes = document.createElement("p");
+		var showBox = document.createElement("a");
+		document.body.getElementById("username").style.display = "none";
+		showBox.href = "javascript:document.getElementById('username').style.display = 'block';";
+		showBox.innerText = "Show popup box.";
 		mes.innerText = "Popup box value cannot be null!";
 		mes.style.textAlign = "center";
+		document.body.appendChild(showBox);
 		document.body.appendChild(mes);
 	}
 }
