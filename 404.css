@@ -1,7 +1,7 @@
 .search-bar{
    width:100%;
    position:absolute;
-   top:95%;
+   top:100%;
    height:100px;
    border:solid red;
 }
@@ -10,4 +10,9 @@ h1{
 }
 p{
    text-align:center;
+}
+h2{
+   text-align:center;
+   position:absolute;
+   top:95%;
 }
