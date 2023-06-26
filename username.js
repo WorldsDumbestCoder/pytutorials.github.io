@@ -10,7 +10,7 @@ function add_user(){
 			document.body.appendChild(p);
 		}else{
 			var p = document.createElement("p");
-			p.innerText = "Failed to create username! Username";
+			p.innerText = "Failed to create username!";
 			p.style.textAlign = "center";
 			document.body.appendChild(p);
 		}
@@ -28,26 +28,18 @@ function add_user(){
 }
 function change_user(){
 	var username = prompt("Create a username: ");
-	if(!username == null){
-		if(!username == ""){
+	if(username == ""){
+		var mes = document.createElement("p");
+		mes.innerText = "Username cannot be empty!";
+		mes.style.textAlign = "center";
+		document.body.appendChild(mes);
+	}else{
+		if(!username == null){
 			localStorage.removeItem("username");
 			localStorage.setItem("username", username);
 		}else{
-			var mes = document.createElement("p");
-			mes.innerText = "Enter content in the popup box!";
-			mes.style.textAlign = "center";
-			document.body.appendChild(mes);
+			alert("Failed to signup");
 		}
-	}else{
-		var mes = document.createElement("p");
-		var showBox = document.createElement("a");
-		document.body.getElementById("username").style.display = "none";
-		showBox.href = "javascript:document.getElementById('username').style.display = 'block';";
-		showBox.innerText = "Show popup box.";
-		mes.innerText = "Popup box value cannot be null!";
-		mes.style.textAlign = "center";
-		document.body.appendChild(showBox);
-		document.body.appendChild(mes);
 	}
 }
 function show_user(){
