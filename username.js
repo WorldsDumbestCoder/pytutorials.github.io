@@ -28,8 +28,22 @@ function add_user(){
 }
 function change_user(){
 	var username = prompt("Create a username: ");
-	localStorage.removeItem("username");
-	localStorage.setItem("username", username);
+	if(!username == null){
+		if(!username == ""){
+			localStorage.removeItem("username");
+			localStorage.setItem("username", username);
+		}else{
+			var mes = document.createElement("p");
+			mes.innerText = "Enter content in the popup box!";
+			mes.style.textAlign = "center";
+			document.body.appendChild(mes);
+		}
+	}else{
+		var mes = document.createElement("p");
+		mes.innerText = "Popup box value cannot be null!";
+		mes.style.textAlign = "center";
+		document.body.appendChild(mes);
+	}
 }
 function show_user(){
 	var username = localStorage.getItem("username");
