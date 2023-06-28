@@ -89,7 +89,7 @@ function popup_username(){
 			changesSaved.innerText = "This is already set";
 			changesSaved.style.color = "red";
 			changesSaved.style.textAlign = "center";
-			document.body.appendChild(changesSaved);
+			document.body.appendChild(setChanges);
 		}else{
 			var setChanges = document.createElement("p");
 			setChanges.innerText = "Changes saved";
