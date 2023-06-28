@@ -8,10 +8,8 @@ if(!localStorage.getItem("username")){
    window.location.assign("username")
   }
   if(window.location.href == "https://pytutorials.github.io/"){
-    if(!localStorage.getItem("popup_username=false")){
-     if(!localStorage.getItem("!username")){
-      alert("Welcome Back " + localStorage.getItem("username"));
-     }
+   if(!localStorage.getItem("!username")){
+      alert("Welcome Back " + localStorage.getItem("username"));   
     }
   }
 }
