@@ -12,7 +12,7 @@ if(!localStorage.getItem("username")){
       alert("Welcome Back " + localStorage.getItem("username"));   
     }else{
      var username = document.createElement("p");
-     username.innerText = "Welcome back " + username;
+     username.innerText = "Welcome back " + localStorage.getItem("username");
      username.style.textAlign = "center";
      username.style.position = "absolute";
      username.style.top = "100%";
