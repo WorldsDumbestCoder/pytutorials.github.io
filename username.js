@@ -81,6 +81,7 @@ function remove_user(){
 }
 function popup_username(){
 	var username = document.getElementById("username");
+	alert(username.value);
 	if(username.value == ""){
 		alert("Check a check box!");
 	}
