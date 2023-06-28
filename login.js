@@ -27,7 +27,7 @@ function signup(){
    document.write("<footer>Thank you for using PyTutorials!</footer>");
   }else{
    var message = document.createElement("h1");
-   message.innerText = "Fill out the oage properly!";
+   message.innerText = "Fill out the page properly!";
    message.textAlign = "center";
    message.style.color = "red";
    document.body.appendChild(message);
