@@ -90,7 +90,8 @@ function popup_username(){
 			changesSaved.style.color = "red";
 			changesSaved.style.textAlign = "center";
 			document.body.appendChild(changesSaved);
-		}else{
+		}
+		if(localStorage.getItem("!username")){
 			var setChanges = document.createElement("p");
 			setChanges.innerText = "Changes saved";
 			setChanges.style.color = "green";
@@ -107,7 +108,8 @@ function popup_username(){
 			setChanges.style.textAlign = "center";
 			document.body.appendChild(setChanges);
 			localStorage.setItem("!username", show_user);
-		}else{
+		}
+		if(localStorage.getItem("!username")){
 			var changesSet = document.createElement("p");
 			changesSet.innerText = "This is already set";
 			changesSet.style.color = "red";
