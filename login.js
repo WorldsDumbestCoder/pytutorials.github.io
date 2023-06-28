@@ -10,6 +10,8 @@ if(!localStorage.getItem("username")){
   if(window.location.href == "https://pytutorials.github.io" && localStorage.getItem("username")){
    if(!localStorage.getItem("!username")){
     alert("Welcome back " + localStorage.getItem("username"));
+   }else{
+    alert("bye!")
    }
 }
 function removeUsername(){
