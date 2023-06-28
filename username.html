@@ -23,12 +23,12 @@ Pytutorials - Username Settings
   <p><a href="javascript:popup_username()">Run function</a></p>
   <hr/>
    <p>Links</p>
-  <a href="index">Home</a>
-  <a href="tutorials/">Tutorials</a>
-  <a href="https://github.com/pytutorials/pytutorials.github.io/blob/main/README.md">About</a>
-  <a href="https://pytutorials5.wordpress.com/2023/05/14/hello-world/">Add recommendations</a>
-  <a href="https://github.com/pytutorials/Python-Examples">More Python examples</a>
-  <a href="username">Username settings</a>
+  <p><a href="index">Home</a></p>
+  <p><a href="tutorials/">Tutorials</a></p>
+  <p><a href="https://github.com/pytutorials/pytutorials.github.io/blob/main/README.md">About</a></p>
+  <p><a href="https://pytutorials5.wordpress.com/2023/05/14/hello-world/">Add recommendations</a></p>
+  <p><a href="https://github.com/pytutorials/Python-Examples">More Python examples</a></p>
+  <p><a href="username">Username settings</a></p>
   <script>
     function logout(){
       var username = localStorage.getItem("username");
@@ -39,9 +39,9 @@ Pytutorials - Username Settings
       }
     }
     if(localStorage.getItem("username")){
-      document.write("<a href='javascript:logout();'>Logout</a>");
+      document.write("<p><a href='javascript:logout();'>Logout</a></p>");
     }else{
-      document.write("<a href='signup'>Signup</a>");
+      document.write("<p><a href='signup'>Signup</a></p>");
     }
   </script>
 </div>
