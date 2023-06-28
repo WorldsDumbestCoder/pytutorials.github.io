@@ -1,18 +1,19 @@
 function add_user(){
 	if(!localStorage.getItem("username")){
 		var user = prompt("Create your username: ");
-		if(!user == ""){
-			localStorage.setItem("username", user);
-			var p = document.createElement("p");
-			p.style.color = "green";
-			p.style.textAlign = "center";
-			p.innerText = "Your username has been created";
-			document.body.appendChild(p);
+		if(user == ""){
+			var mes = document.createElement("p");
+			mes.innerText = "Username cannot be an empty value";
+			mes.style.color = "red";
+			mes.style.textAlign = "center";
+			document.body.appendChild(mes);
 		}else{
-			var p = document.createElement("p");
-			p.innerText = "Failed to create username!";
-			p.style.textAlign = "center";
-			document.body.appendChild(p);
+			localStorage.setItem("username", user);
+			var mes = document.createElement("p");
+			mes.innerText = "Username saved";
+			mes.style.color = "green";
+			mes.style.testAlign = "center";
+			document.body.appendChild(mes);
 		}
 	}else{
 		var p = document.createElement("p");
@@ -32,13 +33,11 @@ function change_user(){
 		var mes = document.createElement("p");
 		mes.innerText = "Username cannot be empty!";
 		mes.style.textAlign = "center";
-		mes.style.color = "green";
+		mes.style.color = "red";
 		document.body.appendChild(mes);
-	}else if(!usernane != null){
+	}else{
 		localStorage.removeItem("username");
 		localStorage.setItem("username", username);
-	}else{
-		localStorage.setItem("username", prompt("Failed to create username. Enter username again: "));
 		var mes = document.createElement("p");
 		mes.innerText = "Your username has been saved as " + localStorage.getItem("username");
 		mes.style.color = "green";
