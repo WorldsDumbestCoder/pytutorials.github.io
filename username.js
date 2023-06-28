@@ -28,7 +28,6 @@ function add_user(){
 }
 function change_user(){
 	var username = prompt("Create a username: ");
-	alert("You entered: " + username);
 	if(username == ""){
 		var mes = document.createElement("p");
 		mes.innerText = "Username cannot be empty!";
@@ -40,7 +39,7 @@ function change_user(){
 			localStorage.removeItem("username");
 			localStorage.setItem("username", username);
 		}else{
-			localStorage.setItem("username", prompt());
+			localStorage.setItem("username", prompt("Failed to create username. Enter username again: "));
 			var mes = document.createElement("p");
 			mes.innerText = "Your username has been saved as " + localStorage.getItem("username");
 			mes.style.color = "green";
