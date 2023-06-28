@@ -7,17 +7,8 @@ if(!localStorage.getItem("username")){
    alert("You already signed up.")
    window.location.assign("username")
   }
-  if(window.location.href == "https://pytutorials.github.io/"){
-   if(!localStorage.getItem("!username")){
-      alert("Welcome Back " + localStorage.getItem("username"));   
-    }else{
-     var username = document.createElement("p");
-     username.innerText = "Welcome back " + localStorage.getItem("username");
-     username.style.textAlign = "center";
-     username.style.position = "absolute";
-     username.style.top = "100%";
-     document.body.appendChild(username);
-  }
+  if(window.location.href == "https://pytutorials.github.io/" && !localStorage.getItem("username")){
+   alert("Welcome back " + localStorage.getItem("username"));
 }
 function removeUsername(){
   localStorage.removeItem("username");
