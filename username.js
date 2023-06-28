@@ -12,7 +12,7 @@ function add_user(){
 			var mes = document.createElement("p");
 			mes.innerText = "Username saved";
 			mes.style.color = "green";
-			mes.style.testAlign = "center";
+			mes.style.textAlign = "center";
 			document.body.appendChild(mes);
 		}
 	}else{
