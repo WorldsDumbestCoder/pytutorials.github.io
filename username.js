@@ -28,6 +28,7 @@ function add_user(){
 }
 function change_user(){
 	var username = prompt("Create a username: ");
+	alert("You entered: " + username);
 	if(username == ""){
 		var mes = document.createElement("p");
 		mes.innerText = "Username cannot be empty!";
@@ -39,7 +40,12 @@ function change_user(){
 			localStorage.removeItem("username");
 			localStorage.setItem("username", username);
 		}else{
-			alert("Failed to signup");
+			localStorage.setItem("username", "pytutorials-username");
+			var mes = document.createElement("p");
+			mes.innerText = "Your username has been saved as pytutorials-username";
+			mes.style.color = "green";
+			mes.style.textAlign = "center";
+			document.body.appendChild(mes);
 		}
 	}
 }
