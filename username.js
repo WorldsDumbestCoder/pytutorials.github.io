@@ -1,7 +1,7 @@
 function add_user(){
 	if(!localStorage.getItem("username")){
 		var user = prompt("Create your username: ");
-		if(!user == null){
+		if(!user == ""){
 			localStorage.setItem("username", user);
 			var p = document.createElement("p");
 			p.style.color = "green";
