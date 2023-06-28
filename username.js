@@ -34,18 +34,16 @@ function change_user(){
 		mes.style.textAlign = "center";
 		mes.style.color = "green";
 		document.body.appendChild(mes);
+	}else if(!usernane != null){
+		localStorage.removeItem("username");
+		localStorage.setItem("username", username);
 	}else{
-		if(!username == null){
-			localStorage.removeItem("username");
-			localStorage.setItem("username", username);
-		}else{
-			localStorage.setItem("username", prompt("Failed to create username. Enter username again: "));
-			var mes = document.createElement("p");
-			mes.innerText = "Your username has been saved as " + localStorage.getItem("username");
-			mes.style.color = "green";
-			mes.style.textAlign = "center";
-			document.body.appendChild(mes);
-		}
+		localStorage.setItem("username", prompt("Failed to create username. Enter username again: "));
+		var mes = document.createElement("p");
+		mes.innerText = "Your username has been saved as " + localStorage.getItem("username");
+		mes.style.color = "green";
+		mes.style.textAlign = "center";
+		document.body.appendChild(mes);
 	}
 }
 function show_user(){
