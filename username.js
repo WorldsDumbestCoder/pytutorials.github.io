@@ -79,3 +79,33 @@ function remove_user(){
 		document.body.appendChild(a);
 	}
 }
+function popup_username(){
+	var username = document.getElementById("username");
+	if(username.value == ""){
+		alert("Check a check box!");
+	}
+	}else if(username.value == 1){
+		if(!localStorage.getItem("!username")){
+			localStorage.setItem("!username", username.value);
+			var changesSet = document.createElement("p");
+			changesSet.innerText = "Changes saved";
+			changesSet.style.color = "green";
+			changesSet.style.textAlign = "center";
+			document.body.appendChild(changesSet);
+		}else{
+			var changesSet = document.createElement("p");
+			changesSet.innerText = "This is already set";
+			changesSet.style.textAlign = "center";
+			changesSet.style.color = "red";
+			document.body.appendChild(changesSet);
+		}
+	}else{
+		if(localStorage.getItem("!username")){
+			localStorage.removeItem("!username");
+			var changesSet = document.createElement("p");
+			changesSet.innerText = "Changes saved";
+			changesSet.style.textAlign = "center";
+			changesSet.style.color = "green";
+			document.body.appendChild(changesSet);
+	}
+}	
