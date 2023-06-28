@@ -22,4 +22,26 @@ Pytutorials - Username Settings
   <p>This section is to choose if you want the website to popup your username when the website loads</p>
   <p><a href="javascript:popup_username()">Run function</a></p>
   <hr/>
+   <p>Links</p>
+  <a href="index">Home</a>
+  <a href="tutorials/">Tutorials</a>
+  <a href="https://github.com/pytutorials/pytutorials.github.io/blob/main/README.md">About</a>
+  <a href="https://pytutorials5.wordpress.com/2023/05/14/hello-world/">Add recomendations</a>
+  <a href="https://github.com/pytutorials/Python-Examples">More Python examples</a>
+  <a href="username">Username settings</a>
+  <script>
+    function logout(){
+      var username = localStorage.getItem("username");
+      if(!username){
+        alert("Your username is not set");
+      }else{
+        localStorage.removeItem("username");
+      }
+    }
+    if(localStorage.getItem("username")){
+      document.write("<a href='javascript:logout();'>Logout</a>");
+    }else{
+      document.write("<a href='signup'>Signup</a>");
+    }
+  </script>
 </div>
