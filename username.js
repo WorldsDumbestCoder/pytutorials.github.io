@@ -83,7 +83,7 @@ function remove_user(){
 }
 function popup_username(){
 	var show_user = prompt("Popup username on onload (true/false) ");
-	if(show_user == true){
+	if(show_user === "true"){
 		if(!localStorage.getItem("!username")){
 			var changesSaved = document.createElement("p");
 			changesSaved.innerText = "This is already set";
