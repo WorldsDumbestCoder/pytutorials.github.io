@@ -40,9 +40,9 @@ function change_user(){
 			localStorage.removeItem("username");
 			localStorage.setItem("username", username);
 		}else{
-			localStorage.setItem("username", "pytutorials-username");
+			localStorage.setItem("username", prompt());
 			var mes = document.createElement("p");
-			mes.innerText = "Your username has been saved as pytutorials-username";
+			mes.innerText = "Your username has been saved as " + localStorage.getItem("username");
 			mes.style.color = "green";
 			mes.style.textAlign = "center";
 			document.body.appendChild(mes);
