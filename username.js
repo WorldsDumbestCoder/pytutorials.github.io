@@ -80,33 +80,37 @@ function remove_user(){
 	}
 }
 function popup_username(){
-	var username = document.getElementById("username");
-	alert(username.value);
-	if(username.value == ""){
-		alert("Check a check box!");
-	}
-	}else if(username.value == 1){
+	var show_user = prompt("Popup username on onload (true/false) ");
+	if(show_user == true){
 		if(!localStorage.getItem("!username")){
-			localStorage.setItem("!username", username.value);
-			var changesSet = document.createElement("p");
-			changesSet.innerText = "Changes saved";
-			changesSet.style.color = "green";
-			changesSet.style.textAlign = "center";
-			document.body.appendChild(changesSet);
+			var changesSaved = document.createElement("p");
+			changesSaved.innerText = "This is already set";
+			changesSaved.style.color = "red";
+			changesSaved.style.textAlign = "center";
+			document.body.appendChild(changesSaved);
+		}else{
+			var setChanges = document.createElement("p");
+			setChanges.innerText = "Changes saved";
+			setChanges.style.color = "green";
+			setChanges.style.textAlign = "center";
+			document.body.appendChild(changesSaved);
+			localStorage.removeItem("!username");
+		}
+	}else{
+		if(!localStorage.getItem("!username")){
+			localStorage.setItem("!username", show_user);
+			var setChanges = document.createElement("p");
+			setChanges.innerText = "Changes saved";
+			setChanges.style.color = "green";
+			setChanges.style.textAlign = "center";
+			document.body.appendChild(setChanges);
+			localStorage.setItem("!username", show_user);
 		}else{
 			var changesSet = document.createElement("p");
 			changesSet.innerText = "This is already set";
-			changesSet.style.textAlign = "center";
 			changesSet.style.color = "red";
+		        changesSet.textAlign = "center";
 			document.body.appendChild(changesSet);
 		}
-	}else{
-		if(localStorage.getItem("!username")){
-			localStorage.removeItem("!username");
-			var changesSet = document.createElement("p");
-			changesSet.innerText = "Changes saved";
-			changesSet.style.textAlign = "center";
-			changesSet.style.color = "green";
-			document.body.appendChild(changesSet);
 	}
 }	
