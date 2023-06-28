@@ -95,7 +95,7 @@ function popup_username(){
 			setChanges.innerText = "Changes saved";
 			setChanges.style.color = "green";
 			setChanges.style.textAlign = "center";
-			document.body.appendChild(changesSaved);
+			document.body.appendChild(setChanges);
 			localStorage.removeItem("!username");
 		}
 	}else{
