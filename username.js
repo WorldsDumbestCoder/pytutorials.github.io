@@ -90,8 +90,7 @@ function popup_username(){
 			changesSaved.style.color = "red";
 			changesSaved.style.textAlign = "center";
 			document.body.appendChild(changesSaved);
-		}
-		if(localStorage.getItem("!username")){
+		}else{
 			var setChanges = document.createElement("p");
 			setChanges.innerText = "Changes saved";
 			setChanges.style.color = "green";
