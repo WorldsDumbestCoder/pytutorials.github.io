@@ -31,8 +31,8 @@ function signup(){
    message.style.color = "red";
    document.body.appendChild(message);
    var refresh = document.createElement("a");
-   a.innerText = "Reload the page";
-   a.href = "signup";
-   document.body.appendChild(a);
+   refresh.innerText = "Reload the page";
+   refresh.href = "signup";
+   document.body.appendChild(refresh);
   }
 }
