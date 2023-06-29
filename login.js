@@ -30,9 +30,5 @@ function signup(){
    message.textAlign = "center";
    message.style.color = "red";
    document.body.appendChild(message);
-   var refresh = document.createElement("a");
-   refresh.innerText = "Reload the page";
-   refresh.href = "signup";
-   document.body.appendChild(refresh);
   }
 }
