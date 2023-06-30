@@ -1,7 +1,9 @@
 if(window.undefined){
-  window.location.assign("404.html");
-}
-if(window.onerror){
-  document.write("<h1 style='color:white;'>There was an unexpected error with the website.</h1>");
-  document.body.style.background = "black";
+  const xhttp  = new XMLHttpRequest();
+  xhttp.onload = function(){
+    var div = document.createElement("div");
+    div.innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "404.html");
+  xhttp.send();
 }
