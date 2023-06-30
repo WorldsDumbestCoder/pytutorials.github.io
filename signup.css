@@ -1,0 +1,16 @@
+.signup-form{
+  border:10px solid orange;
+  background-color:black;
+  height:310px;
+  width:200pp;
+}
+.signup-form input{
+  border:solid red;
+  width:185px;
+}
+.signup-form label{
+ color:white;
+  text-align:center;
+  position:absolute;
+  top:389px;
+}
