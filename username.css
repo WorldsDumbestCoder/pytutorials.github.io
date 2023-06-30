@@ -1,8 +1,16 @@
-.username {
-  border: 2px solid #555;
-  border-radius: 8px;
-  padding: 10px;
-  background-color: silver;
+.username{
+  border:2px  solid #255;
+  border-radius: 20%;
+  padding:50px;
+  background-color:silver;
+  text-align:center;
+  border:20px solid orange;
+}
+.links{
+  background-color:white;
+  border:6px solid red;
+  border-radius:50%;
+  padding:25%;
 }
 .username_header{
   text-align:center;
