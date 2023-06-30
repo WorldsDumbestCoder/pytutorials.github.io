@@ -1,1 +1,3 @@
-<h1>hello</h1>
+index.php //The file extension can be changed using htaccess, ex: its type stays php but will be visible to visitors as index.html
+
+<?php echo "Hello world";?>
