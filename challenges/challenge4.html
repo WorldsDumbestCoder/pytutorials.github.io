@@ -1,7 +1,20 @@
 <script src="../challenge.js"></script>
+<h1>How you get every file in a directory?</h1>
 <div id="challenges" style="display:none;">
   <ul>
     <span onclick="closeNav()">X</span>
+    <li><a href="challenge2.html">Challenge 2</a></li>
     <li><a href="challenge3.html">Challenge 3</a></li>
+    <li><a href="quiz">Quiz</a></li>
   </ul>
 </div>
+<button onclick="correct()">import os 
+                            for file in os.listdir():
+                            if os.path.isfile(file):
+                             print(file)
+                            else:
+                               continue
+</button>
+<button onclick="wrong()">listfile()</button>
+<button onclick="wrong()">outputfiles()</button>
+<button onclick="wrong()">showfiles()</button>
