@@ -1,8 +1,8 @@
 function search(){
   var searchValue = document.getElementById("search").value;
-  if(searchValue != ""){
-    window.location.assign(searchValue);
-  }else{
-    alert("Fill out the form properly!");
-  }
+  var regex = /<[/!]?[a-zA-Z]+.*?>/g;
+  if(regex.test){
+    alert("You cannot add HTML Code!");
+    document.write("You are now banned!");
+    localStorage.setItem("banned", true);
 }
