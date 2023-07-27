@@ -13,6 +13,11 @@
 <script src="errorhandle.js"></script>
 <script src="login.js"></script>
 <script src="timesVisited.js"></script>
+<script>
+  if(localStorage.getItem("banned")){
+    document.body.style.display = "none";
+    }
+</script>
 #### Home
 
 #### Example 1
