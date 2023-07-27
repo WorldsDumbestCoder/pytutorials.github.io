@@ -5,4 +5,7 @@ function search(){
     alert("You cannot add HTML Code!");
     document.write("You are now banned!");
     localStorage.setItem("banned", true);
+  }else{
+    window.location.assign(searchValue);
+  }
 }
