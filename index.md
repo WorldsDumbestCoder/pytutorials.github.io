@@ -15,8 +15,8 @@
 <script src="timesVisited.js"></script>
 <script>
   if(localStorage.getItem("banned")){
-    document.body.style.display = "none";
-    }
+    window.location.assign("banned.html");
+  }
 </script>
 #### Home
 
