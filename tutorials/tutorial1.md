@@ -3,7 +3,7 @@
 In this tutorial we are going to create a variable "x" and assign it to 5 then output it using the print function.
 But first what is a variable?
 A variable is used to store data like numbers, text, etc.
-To write a variable in python you just type a letter than an equal sign like what the example shows.
+To write a variable in python you just type a letter than an equal sign like and finnaly set it to a string or number what the example shows.
 ```python
 x = 5
 print(x)
