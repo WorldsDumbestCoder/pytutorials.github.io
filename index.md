@@ -1,6 +1,6 @@
 # PyTutorials - Home
   <p>print("Hello World!")</p>
-  <a href="index">Home</a> <a>|</a> <a href="https://pytutorials.github.io/tutorials">Tutorials</a> | <a id="signup" href="signup" style="display:none;">Signup</a>
+  <a href="index">Home</a> <a>|</a> <a href="tutorials/">Tutorials</a> | <a id="signup" href="signup" style="display:none;">Signup</a>
 <div class="search-form">
   <form action="javascript:search();">
     <input type="text" value="" id="search" placeholder="Search for a page..."/>
