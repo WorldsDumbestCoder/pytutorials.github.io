@@ -1,11 +1,10 @@
 <h3>Tutorial 6:  User Input</h3>
 <p>In this tutorial we learn how to get user input.</p>
-<pre class="brush: python">
+```python
    name = input("What is your name? ")
    age = input("How old are you? ")
-   print(name + " is " + age + " years old ")
-</pre>
-
+   print(name + " is " + age + " years old")
+```
 <p>In this code we get the user to enter there name and age then output it.</p>
 
 <a href="https://onlinegdb.com">Test the code</a>| <a href="tutorial5">Previous Tutorial</a> | <a href="tutorial7">Tutorial 7</a>
